@@ -4,121 +4,72 @@ using UnityEngine;
 
 public class PlayerNewMovement : MonoBehaviour
 {
-    private CharacterController _cc;
-    [SerializeField] PlayerCam camara;
+    float _xAxis, _zAxis;
+    [SerializeField] float _speed;
+    [SerializeField] float _jumpForce;
+    CharacterController _cc;
 
-    //Inputs
-    float _horizontalInput;
-    float _verticalInput;
+    Vector3 _direccion;
 
-    //Keybinds
-    [Header("Keybinds")]
-    //[SerializeField] public KeyCode sprintKey = KeyCode.LeftShift;
-    [SerializeField] public KeyCode jumpKey = KeyCode.Space;
-
-    //Variables de velocidad
-    [SerializeField] private float _moveSpeed;
-    [SerializeField] private float _gravedad = 9.8f;
-    private float _velocity;
-    public float gravityMulti = 3.0f;
-    //public float walkspeed;
-    //public float sprintSpeed;
-    
-    Vector3 moveDirection;
-
-    //Variables de salto
-    public float jumpHeight;
-    public float jumpTime;
-
-    //public float jumpCooldown;
-    //bool readyToJump = true;
-
-    void Start()
+    float _gravedad = -9.8f;
+    float _yVelocity;
+    [SerializeField] float _gravedadMult;
+    private void Start()
     {
         _cc = GetComponent<CharacterController>();
     }
+
     void Update()
     {
-        MyInput();
-        Move();
-        Gravedad();
-    }
-    void Move()
-    {
-        Vector3 moveDirection = (transform.right * _horizontalInput + transform.forward * _verticalInput).normalized;
-        //moveDirection.y = 0;
-        _cc.Move(moveDirection * Time.deltaTime * _moveSpeed);
-        transform.rotation = camara.orientation.rotation;
-    }
-    void Gravedad()
-    {
-        //_gravedad = 0f;
-        _cc.Move(Vector3.down * _gravedad * Time.deltaTime);
-        /*
-        if (_cc.isGrounded)
-        {
-            
-        }
-        else
-        {
-            
-        }
-        
-        moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
-        if (_cc.isGrounded)
-        {
-            _velocity = -1.0f;
-        }
-        else
-        {
-            _velocity += _gravedad * gravityMulti * Time.deltaTime;        
-        }
-        moveDirection.y = _velocity;
-        
-        if (!_cc.isGrounded)
-        {
-            //_timeInAir = Time.time - _startTime;
-            //gravityMulti = _timeInAir;
-            
 
-        }
-        else if (_cc.isGrounded)
-        {
-            // _timeInAir = Time.time * 0f;
-            //gravityMulti = _timeInAir;
-        }
-        */
-        //_cc.Move(Vector3.down * gravityMulti * _gravedad * Time.deltaTime);
-    }
-    private void MyInput()
-    {
-        _horizontalInput = Input.GetAxisRaw("Horizontal");
-        _verticalInput = Input.GetAxisRaw("Vertical");
+        _xAxis = Input.GetAxisRaw("Horizontal");
+        _zAxis = Input.GetAxisRaw("Vertical");
 
-        // when to jump
-        if (Input.GetKey(jumpKey) && _cc.isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            print("salte");
             Jump();
         }
+
     }
-    private void Jump()
+
+    private void FixedUpdate()
     {
-        float verticalF = Mathf.Sqrt(2 * 9.8f * jumpHeight); // Salto de 3 unidades de altura
-        StartCoroutine(JumpTime(new Vector3(0, verticalF, 0)));
+        Gravedad();
+
+        Movement();
+
     }
-    IEnumerator JumpTime(Vector3 force)
+
+    void Gravedad()
     {
-        var startJump = Time.time;
-        while (Time.time < startJump + jumpTime)
+        if (_cc.isGrounded == true && _yVelocity < 0)
         {
-            _cc.Move(force/jumpTime * Time.deltaTime);
-            yield return null; 
-        }      
+            _yVelocity = -1;
+        }
+        else
+        {
+            _yVelocity += _gravedad * _gravedadMult * Time.fixedDeltaTime;
+        }
+
+        _direccion.y = _yVelocity;
     }
-    //private void ResetJump()
-    //{
-    //    //readyToJump = true;
-    //    //_exitRampa = false;
-    //}
+
+    void Movement()
+    {
+        Vector3 dir = (transform.right * _xAxis + transform.forward * _zAxis).normalized;
+
+        _direccion.x = dir.x;
+        _direccion.z = dir.z;
+
+        _cc.Move(_direccion * Time.fixedDeltaTime * _speed);
+    }
+
+    void Jump()
+    {
+        if (_cc.isGrounded == true)
+        {
+            _yVelocity += _jumpForce;
+        }
+
+    }
 }

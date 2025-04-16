@@ -270,8 +270,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 677535709}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &136477521
@@ -281,7 +280,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136477519}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 239abb3053b4d1240813f9c85a96559b, type: 3}
   m_Name: 
@@ -593,6 +592,7 @@ GameObject:
   - component: {fileID: 341916764}
   - component: {fileID: 341916765}
   - component: {fileID: 341916766}
+  - component: {fileID: 341916767}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -656,13 +656,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b84034377572d478fa403c04632986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camara: {fileID: 677535711}
-  jumpKey: 32
-  _moveSpeed: 5
-  _gravedad: 0
-  gravityMulti: 0
-  jumpHeight: 0.25
-  jumpTime: 0.26
+  _speed: 6
+  _jumpForce: 3
+  _gravedadMult: 0.42
 --- !u!114 &341916766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +680,24 @@ MonoBehaviour:
   throwKey: 114
   throwForce: 70
   throwUpwardForce: 0
+--- !u!114 &341916767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341916758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3072c1b20696f468cc2681e9e1544c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cam: {fileID: 0}
+  _player: {fileID: 0}
+  _cameraHolder: {fileID: 1847267255}
+  _fixedZ: 0.05
+  _fixedY: 1.386
+  _sensibilidad: 300
 --- !u!1 &404910738
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +980,7 @@ Transform:
   m_Children:
   - {fileID: 1087791184}
   - {fileID: 1736350868}
-  m_Father: {fileID: 136477520}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &677535710
 MonoBehaviour:
@@ -1019,7 +1033,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677535706}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0d922d8e980c684e967723442bb0d64, type: 3}
   m_Name: 
@@ -2122,6 +2136,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 48399228}
   - {fileID: 168029467}
+  - {fileID: 677535709}
   - {fileID: 136477520}
   - {fileID: 341916762}
   - {fileID: 1530091164}
