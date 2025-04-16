@@ -52,15 +52,18 @@ public class PlayerNewMovement : MonoBehaviour
     }
     void Gravedad()
     {
+        //_gravedad = 0f;
+        _cc.Move(Vector3.down * _gravedad * Time.deltaTime);
+        /*
         if (_cc.isGrounded)
         {
-            _gravedad = 0f;
+            
         }
         else
         {
-            _cc.Move(Vector3.down * gravityMulti * _gravedad * Time.deltaTime);
+            
         }
-        /*
+        
         moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
         if (_cc.isGrounded)
         {
@@ -71,21 +74,21 @@ public class PlayerNewMovement : MonoBehaviour
             _velocity += _gravedad * gravityMulti * Time.deltaTime;        
         }
         moveDirection.y = _velocity;
-        /*
-        /*
-        if (!_cc.isGrounded && !_isOnGround)
+        
+        if (!_cc.isGrounded)
         {
-            _timeInAir = Time.time - _startTime;
-            gravityMulti = _timeInAir;
-            _cc.Move(Vector3.down * gravityMulti * _gravedad * Time.deltaTime);
+            //_timeInAir = Time.time - _startTime;
+            //gravityMulti = _timeInAir;
             
+
         }
-        else if (_cc.isGrounded && _isOnGround)
+        else if (_cc.isGrounded)
         {
-            _timeInAir = Time.time * 0f;
-            gravityMulti = _timeInAir;
+            // _timeInAir = Time.time * 0f;
+            //gravityMulti = _timeInAir;
         }
         */
+        //_cc.Move(Vector3.down * gravityMulti * _gravedad * Time.deltaTime);
     }
     private void MyInput()
     {
