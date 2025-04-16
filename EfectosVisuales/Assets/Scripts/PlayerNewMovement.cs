@@ -18,9 +18,12 @@ public class PlayerNewMovement : MonoBehaviour
 
     //Variables de velocidad
     [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _gravedad = 9.8f;
+    private float _velocity;
+    public float gravityMulti = 3.0f;
     //public float walkspeed;
     //public float sprintSpeed;
-
+    
     Vector3 moveDirection;
 
     //Variables de salto
@@ -43,13 +46,46 @@ public class PlayerNewMovement : MonoBehaviour
     void Move()
     {
         Vector3 moveDirection = (transform.right * _horizontalInput + transform.forward * _verticalInput).normalized;
-        moveDirection.y = 0;
+        //moveDirection.y = 0;
         _cc.Move(moveDirection * Time.deltaTime * _moveSpeed);
         transform.rotation = camara.orientation.rotation;
     }
     void Gravedad()
     {
-        _cc.Move(Vector3.down * 9.8f * Time.deltaTime);
+        if (_cc.isGrounded)
+        {
+            _gravedad = 0f;
+        }
+        else
+        {
+            _cc.Move(Vector3.down * gravityMulti * _gravedad * Time.deltaTime);
+        }
+        /*
+        moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
+        if (_cc.isGrounded)
+        {
+            _velocity = -1.0f;
+        }
+        else
+        {
+            _velocity += _gravedad * gravityMulti * Time.deltaTime;        
+        }
+        moveDirection.y = _velocity;
+        /*
+        /*
+        if (!_cc.isGrounded && !_isOnGround)
+        {
+            _timeInAir = Time.time - _startTime;
+            gravityMulti = _timeInAir;
+            _cc.Move(Vector3.down * gravityMulti * _gravedad * Time.deltaTime);
+            
+        }
+        else if (_cc.isGrounded && _isOnGround)
+        {
+            _timeInAir = Time.time * 0f;
+            gravityMulti = _timeInAir;
+        }
+        */
     }
     private void MyInput()
     {
@@ -59,19 +95,14 @@ public class PlayerNewMovement : MonoBehaviour
         // when to jump
         if (Input.GetKey(jumpKey) && _cc.isGrounded)
         {
-            //readyToJump = false;
             print("salte");
             Jump();
-
-            //Invoke(nameof(ResetJump), jumpCooldown);
         }
     }
     private void Jump()
     {
         float verticalF = Mathf.Sqrt(2 * 9.8f * jumpHeight); // Salto de 3 unidades de altura
-        //_cc.Move(new Vector3(0, verticalF,0));
         StartCoroutine(JumpTime(new Vector3(0, verticalF, 0)));
-        
     }
     IEnumerator JumpTime(Vector3 force)
     {
