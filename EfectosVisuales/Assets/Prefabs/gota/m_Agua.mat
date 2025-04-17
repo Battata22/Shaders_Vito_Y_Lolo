@@ -42,9 +42,11 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _X_o_Y: 0
-    - _distance: 2.05
-    - _fallOff: 2.36
+    - _distance: 7.67
+    - _fallOff: 1.73
     - _speed: 0.06
     - _speedOlas: 2.69
+    - _speed_X: 0.1
+    - _speed_Y: 0.18
     m_Colors: []
   m_BuildTextureStacks: []
