@@ -58,12 +58,12 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.82004446, b: 0, a: 0}
-    - _FresnelColor: {r: 87.67155, g: 7.575883, b: 1.240633, a: 0}
+    - _BaseColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 0}
+    - _FresnelColor: {r: 51.377876, g: 4.1321955, b: 0.8069809, a: 0}
     - _Metallic: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseSpeed: {r: -0.1, g: 0.1, b: 0, a: 0}
     - _NormalStrength: {r: 0, g: 0, b: 0, a: 0}
     - _Smoothness: {r: 0, g: 0, b: 0, a: 0}
-    - _VoronoiColor: {r: 47.937252, g: 10.009941, b: 0, a: 0}
+    - _VoronoiColor: {r: 41.731796, g: 23.66269, b: 0.98424035, a: 0}
     - _VoronoiSpeed: {r: 0.1, g: 0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
