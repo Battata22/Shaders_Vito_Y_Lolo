@@ -43,17 +43,17 @@ Material:
     - _ControladorSize: 0.5
     - _EspumaSpeed: 0.98
     - _EspumaTilling: 1.09
-    - _FoamDepth: 3.05
-    - _FoamFalloff: 0.37
-    - _FoamSize: 0.95
+    - _FoamDepth: 1.44
+    - _FoamFalloff: 0.61
+    - _FoamSize: 0.91
     - _QueueControl: 0
     - _X_o_Y: 0
     - _alpha: 1.19
     - _distance: 4.39
     - _espumaSpeedX: 0
     - _fallOff: 1.06
-    - _maxEspuma: 1.6
-    - _minEspuma: 1.52
+    - _maxEspuma: 1.23
+    - _minEspuma: 1.15
     - _speed: 0.06
     - _speedOlas: 0.1
     - _speedOlasPanerX: 1.11
