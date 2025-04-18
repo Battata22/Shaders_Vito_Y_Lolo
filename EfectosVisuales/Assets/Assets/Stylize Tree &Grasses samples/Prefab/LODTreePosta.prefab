@@ -63,6 +63,8 @@ GameObject:
   - component: {fileID: 1841122321966983945}
   - component: {fileID: 7963172972904708582}
   - component: {fileID: 8365818450728138976}
+  - component: {fileID: 8272210395558175335}
+  - component: {fileID: 103557451886580475}
   m_Layer: 0
   m_Name: Tree_POSTA
   m_TagString: Untagged
@@ -136,3 +138,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8272210395558175335
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024757944400542647}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6583871, y: 2.6481833, z: 0.75577575}
+  m_Center: {x: 0.03470283, y: 1.3986835, z: 0.060159996}
+--- !u!65 &103557451886580475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024757944400542647}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.2161849, y: 1.4928241, z: 1.8354328}
+  m_Center: {x: 0.034702897, y: 1.7713301, z: 0.060160045}
