@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 164330421}
   - component: {fileID: 164330420}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 164330419}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.029, z: 0}
+  m_LocalPosition: {x: 0, y: 4.029, z: -0.807}
   m_LocalScale: {x: 0.71716, y: 0.71716, z: 0.71716}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 960803873}
   - component: {fileID: 960803872}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5749,8 +5749,8 @@ Transform:
   m_GameObject: {fileID: 960803871}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 1.299}
-  m_LocalScale: {x: 0.5669, y: 0.6823775, z: 0.5669}
+  m_LocalPosition: {x: 0, y: 0, z: 0.52010703}
+  m_LocalScale: {x: 0.381501, y: 0.45921287, z: 0.38150114}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 164330423}
