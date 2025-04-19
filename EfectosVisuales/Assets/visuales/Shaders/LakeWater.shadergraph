@@ -4030,7 +4030,7 @@
     "m_Group": {
         "m_Id": "f732017fc32142f4855ced1b1b55989d"
     },
-    "m_Name": "water",
+    "m_Name": "Depth Fade",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -6422,10 +6422,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -691.0000610351563,
-            "y": -847.9999389648438,
-            "width": 160.00006103515626,
-            "height": 33.99993896484375
+            "x": -688.0,
+            "y": -844.0,
+            "width": 159.99993896484376,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -7845,7 +7845,7 @@
     "m_Group": {
         "m_Id": "f732017fc32142f4855ced1b1b55989d"
     },
-    "m_Name": "water",
+    "m_Name": "Depth Fade",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -9605,7 +9605,7 @@
     "m_Group": {
         "m_Id": "be55dccc432a47a8a30336ad23cbac8a"
     },
-    "m_Name": "water",
+    "m_Name": "Depth Fade",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {

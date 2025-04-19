@@ -7203,7 +7203,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "water",
+    "m_Name": "Depth Fade",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -9377,7 +9377,7 @@
     "m_Group": {
         "m_Id": "cd52a7ed1a5140e4a788bbbf249b7217"
     },
-    "m_Name": "water",
+    "m_Name": "Depth Fade",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -12782,7 +12782,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "water",
+    "m_Name": "Depth Fade",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
