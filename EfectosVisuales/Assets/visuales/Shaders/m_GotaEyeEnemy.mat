@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8216462018199045861
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_GotaOjosEnemy
+  m_Name: m_GotaEyeEnemy
   m_Shader: {fileID: -6465566751694194690, guid: 5044ddf2c24d4544785c61a078db23ea,
     type: 3}
   m_Parent: {fileID: 0}
@@ -24,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _CausticasTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,39 +55,37 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ControladorSize: 0.003
-    - _NoisePosition: 3.32
-    - _NoiseSizeA: 33
-    - _NoiseSizeB: 32.28
+    - _AlphaNoise: 34.94
+    - _Borde_Power: 4.85
+    - _CausticCutOut: 0
+    - _CausticasSpeed: 0
+    - _CausticasTillingA: 0
+    - _CausticasTillingB: 0
+    - _NoiseSizeA: 15.9
+    - _NoiseSizeB: 5
     - _NormalStrenght: 0.02
+    - _Normalspeed: -0.3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _StepAlpha: 1
+    - _StepAlpha: 0.023
+    - _WaveStrength: -0.001
     - _distance: 4.21
     - _distanceDepth: 1
     - _fallOff: 8.1
     - _fallOffDepth: 1
-    - _power: 3.41
-    - _speedOlasPanerX: 0.39
-    - _speedOlasPanerY: 0.14
+    - _power: 2.71
+    - _smoothness: 1
+    - _speedDeform: 0.01
+    - _speedTileAlphaX: -0.3
+    - _speedTileAlphaY: -0.1
     - _speedX: 0
-    - _speedY: 0.15
-    - _tilingPositionB: 0
+    - _speedY: 0.19
+    - _tilingPositionB: 0.18
     - _tillingPositionA: 0
+    - _waveScale: 91.2
     m_Colors:
-    - _BaseColor: {r: 0.15686275, g: 0.25490198, b: 0.2901961, a: 0}
-    - _ColorEspuma: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0.13363297, g: 0.27154, b: 0.31132078, a: 0}
+    - _CausticColor: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorEspuma: {r: 0.3255162, g: 0.7264151, b: 0.58817405, a: 0}
+    - _WaveForce: {r: -0.001, g: 0.001, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &7122648209074704051
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
