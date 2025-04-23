@@ -52,7 +52,7 @@ Material:
     - _QueueControl: 0
     - _X_o_Y: 0
     - _alpha: 1.19
-    - _alphaSize: 0
+    - _alphaSize: 2.7
     - _causticCutOut: 0.28
     - _distance: 4.39
     - _espumaSpeedX: 0
@@ -66,8 +66,8 @@ Material:
     - _speed_X: 0.23
     - _speed_Y: 0.23
     m_Colors:
-    - _Base_Color: {r: 0.19277322, g: 0.6008814, b: 0.7169812, a: 0}
+    - _Base_Color: {r: 0.31452468, g: 0.6268791, b: 0.7169812, a: 0.8156863}
     - _CautiscColor: {r: 13.255386, g: 13.255386, b: 13.255386, a: 1}
-    - _ColorDepthFade: {r: 0.3372549, g: 0.7372549, b: 0.7372549, a: 0}
-    - _ColorEspuma: {r: 0.9803922, g: 0.9803922, b: 0.9803922, a: 0}
+    - _ColorDepthFade: {r: 0.36690098, g: 0.9150943, b: 0.9150943, a: 0}
+    - _ColorEspuma: {r: 0.98039216, g: 0.98039216, b: 0.98039216, a: 0.21960784}
   m_BuildTextureStacks: []

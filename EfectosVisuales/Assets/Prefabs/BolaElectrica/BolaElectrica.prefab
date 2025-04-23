@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &717411329467177861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8508157191204435627}
+  m_Layer: 0
+  m_Name: BolaElectrica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8508157191204435627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717411329467177861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.26, z: -2.012566}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7258578933869608379}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8485965125654980942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4682842901206861008, guid: 9271e7155a22fe34a992dda7b627a46b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7916346138359060031}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7258578933869608379}
+  - component: {fileID: 6498432990407887589}
+  - component: {fileID: 8292351469742138087}
+  - component: {fileID: 5281835222624634833}
+  m_Layer: 0
+  m_Name: Electricity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7258578933869608379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7916346138359060031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485965125654980942}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.8251586, y: 0.37300014, z: 1.6352789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8508157191204435627}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6498432990407887589
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3874258002379565595, guid: 9271e7155a22fe34a992dda7b627a46b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7916346138359060031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485965125654980942}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8292351469742138087
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 7742883848150407078, guid: 9271e7155a22fe34a992dda7b627a46b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7916346138359060031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485965125654980942}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6c9b951f9466ee84a913883afd0d80a3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &5281835222624634833
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1628551819312207089, guid: 9271e7155a22fe34a992dda7b627a46b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7916346138359060031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485965125654980942}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &7916346138359060031
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8508157191204435627}
+    m_Modifications:
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8251586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6330001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.37728715
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660852171277097013, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682842901206861008, guid: 9271e7155a22fe34a992dda7b627a46b,
+        type: 3}
+      propertyPath: m_Name
+      value: Electricity
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9271e7155a22fe34a992dda7b627a46b, type: 3}
