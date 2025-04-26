@@ -40,15 +40,15 @@ Material:
     m_Floats:
     - _Angle: 0
     - _BoltPower: 20
-    - _Bolts: 5
+    - _Bolts: 7.86
     - _DsitortionScale: 0.1
     - _EdgeBlendSPeed: 20
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _BaseColor: {r: 8, g: 6.024564, b: 0, a: 0}
+    - _BaseColor: {r: 64, g: 48.19651, b: 0, a: 0}
     - _EdgeMinMax: {r: 2, g: 5, b: 0, a: 0}
-    - _Speed: {r: -2, g: 2, b: 0, a: 0}
+    - _Speed: {r: -1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7734951013868307251
 MonoBehaviour:
