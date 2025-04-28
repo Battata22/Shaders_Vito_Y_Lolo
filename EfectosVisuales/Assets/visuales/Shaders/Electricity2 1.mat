@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Electricity2
+  m_Name: Electricity2 1
   m_Shader: {fileID: -6465566751694194690, guid: 453454fe429fcf04eb08f4b68e271004,
     type: 3}
   m_Parent: {fileID: 0}
@@ -40,15 +40,15 @@ Material:
     m_Floats:
     - _Angle: 0
     - _BoltPower: 20
-    - _Bolts: 7.86
-    - _DsitortionScale: 0.1
+    - _Bolts: 12.7
+    - _DsitortionScale: 0.706
     - _EdgeBlendSPeed: 20
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _BaseColor: {r: 64, g: 48.19651, b: 0, a: 0}
-    - _EdgeMinMax: {r: 2, g: 3.75, b: 0, a: 0}
-    - _Speed: {r: -1, g: 1, b: 0, a: 0}
+    - _EdgeMinMax: {r: 3.84, g: 4, b: 0, a: 0}
+    - _Speed: {r: 0.82, g: -0.03, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7734951013868307251
 MonoBehaviour:
