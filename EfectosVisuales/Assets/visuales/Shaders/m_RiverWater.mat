@@ -52,7 +52,7 @@ Material:
     - _QueueControl: 0
     - _X_o_Y: 0
     - _alpha: 1.19
-    - _alphaSize: 2.7
+    - _alphaSize: 6.63
     - _causticCutOut: 0.28
     - _distance: 4.39
     - _espumaSpeedX: 0

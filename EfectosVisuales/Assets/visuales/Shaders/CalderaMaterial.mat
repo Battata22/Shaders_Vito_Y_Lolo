@@ -58,29 +58,29 @@ Material:
     - _CausticSpeed: -0.06
     - _CausticTilling: 1.1
     - _CausticTillingB: -1.76
-    - _ControladorSize: 0.14
+    - _ControladorSize: 0.01
     - _EspumaSize: 0.91
     - _FoamDistance: 0.06
-    - _FoamFallOff: -0.23
-    - _NoiseSizeA: 38.3
-    - _NoiseSizeB: 22.2
+    - _FoamFallOff: 1.48
+    - _NoiseSizeA: 22.5
+    - _NoiseSizeB: 14.8
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1.4
+    - _Smoothness: 1
     - _causticCutOut: 0.2
-    - _distance: 0.18
-    - _espumaSpeed: 1.4
-    - _espumaTilling: 2.6
+    - _distance: 0.14
+    - _espumaSpeed: 1.06
+    - _espumaTilling: 1.05
     - _fallOff: 0.74
     - _maxEspuma: 1.14
     - _minEspuma: 1.18
-    - _speedOlasPanerX: 1.19
-    - _speedOlasPanerY: 1.98
+    - _speedOlasPanerX: 1.25
+    - _speedOlasPanerY: 1
     - _speedX: 0.1
     - _speedY: 0.1
     m_Colors:
     - _BaseColor: {r: 0.11246917, g: 0.4339623, b: 0.07164471, a: 0}
     - _CausticColor: {r: 2.4005635, g: 22.363518, b: 0, a: 0}
-    - _ColorDepthFade: {r: 0.14178428, g: 0.4056604, b: 0, a: 1}
-    - _ColorEspuma: {r: 0.3708579, g: 0.8584906, b: 0.17412782, a: 1}
+    - _ColorDepthFade: {r: 0.14783564, g: 0.6981132, b: 0, a: 1}
+    - _ColorEspuma: {r: 0.56870717, g: 1, b: 0.3915094, a: 1}
   m_BuildTextureStacks: []
