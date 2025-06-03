@@ -27,10 +27,16 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _SaturationLevels: 9.6
+    - _BreathVignette: 1
+    - _Fullscreen_DepthWrite: 0
+    - _SaturationLevels: 0.61
     - _TimeVelocity: 8.78
-    - _saturation: 1
+    - _VignetteIntensity: 1.84
+    - _VignettePower: 1.45
+    - _clampMax: 1
+    - _saturation: 0.13
     m_Colors:
+    - _ColorVignette: {r: 0.33676958, g: 1, b: 0, a: 0.3921569}
     - _fresnelColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7044061974081099067

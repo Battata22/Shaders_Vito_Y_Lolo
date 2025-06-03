@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: death
+  m_Name: LowHp
   m_Shader: {fileID: -6465566751694194690, guid: 1314f4343586f7f48a9a620504e81b6c,
     type: 3}
   m_Parent: {fileID: -876546973899608171, guid: 1314f4343586f7f48a9a620504e81b6c,
@@ -28,10 +28,23 @@ Material:
     m_Ints: []
     m_Floats:
     - _BigCellsScale: -3.1
+    - _BreathFrequency: 2
+    - _Fullscreen_BlendMode: 1
+    - _Fullscreen_DepthWrite: 0
+    - _Fullscreen_DstAlphaBlend: 10
+    - _Fullscreen_DstColorBlend: 10
+    - _Fullscreen_SrcColorBlend: 5
+    - _Saturation: 0.26
+    - _SaturationLevels: 0
     - _SmallCellsScale: 53.5
+    - _VignatteIntensity: 9.62
+    - _VignettePower: 4.23
     - _saturation: -0.01
     - _saturationlevels: 37.28
     m_Colors:
+    - _Color: {r: 0.6320754, g: 0, b: 0, a: 0.47058824}
+    - _NoiseSpeed: {r: 0, g: 0.3, b: 0, a: 0}
+    - _NoiseTilling: {r: 2, g: 2, b: 0, a: 0}
     - _PlagaColor: {r: 0.8113208, g: 0.11863652, b: 0.5423964, a: 0}
     - _PlagaColor2: {r: 0, g: 0.7724856, b: 0.90588236, a: 0}
     - _rimcolor: {r: 0.9528302, g: 0.50787646, b: 0.51228195, a: 0}
