@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7567493109675480844
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CalderaAgua
+  m_Shader: {fileID: -6465566751694194690, guid: 70b643ffd72d0a444b525a027d812819,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CausticTexture:
+        m_Texture: {fileID: 2800000, guid: 48bb5e1d5a7de95478f2e0aca14bc45f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CausticSpeed: -0.06
+    - _CausticTilling: 1.1
+    - _CausticTillingB: -1.76
+    - _ControladorSize: 0.01
+    - _EspumaSize: 0.91
+    - _FoamDistance: 0.06
+    - _FoamFallOff: 1.48
+    - _NoiseSizeA: 22.5
+    - _NoiseSizeB: 14.8
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smoothness: 1
+    - _causticCutOut: 0.2
+    - _distance: 0.14
+    - _espumaSpeed: 1.06
+    - _espumaTilling: 1.05
+    - _fallOff: 0.74
+    - _maxEspuma: 1.14
+    - _minEspuma: 1.18
+    - _speedOlasPanerX: 1.25
+    - _speedOlasPanerY: 1
+    - _speedX: 0.1
+    - _speedY: 0.1
+    m_Colors:
+    - _BaseColor: {r: 0.23028658, g: 0.54827285, b: 0.6509434, a: 0}
+    - _CausticColor: {r: 0.27880538, g: 0.6060416, b: 0.74818665, a: 0}
+    - _ColorDepthFade: {r: 0.25952297, g: 0.57725674, b: 0.6792453, a: 1}
+    - _ColorEspuma: {r: 0.23137255, g: 0.54901963, b: 0.6509804, a: 1}
+  m_BuildTextureStacks: []
