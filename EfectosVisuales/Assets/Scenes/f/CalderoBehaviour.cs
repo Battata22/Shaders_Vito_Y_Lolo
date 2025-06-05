@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CalderoBehaviour : MonoBehaviour, ICaldero
 {
-    [SerializeField] Material rojoColor, verdeColor, aguaColor;
-    [SerializeField] Renderer aguarenderer;
+    [SerializeField] Material rojoColor, verdeColor, aguaColor, rojoBurbuja, verdeBurbuja, azulBurbuja, humoBlanco, humoRojo, humoVerde;
+    [SerializeField] Renderer aguarenderer, particulas, humito;
     [SerializeField] bool agua, rojo, verde;
+    [SerializeField] ParticleSystem humo;
 
     void Start()
     {
@@ -19,27 +20,67 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
             }
         }
 
+        var go1 = GetComponentsInChildren<Renderer>();
+        foreach (var sel in go)
+        {
+            if (sel.gameObject.tag == "Particulas")
+            {
+                particulas = sel.GetComponent<Renderer>();
+            }
+        }
+        //var go2 = GetComponentsInChildren<ParticleSystem>();
+        //foreach (var sel in go)
+        //{
+        //    if (sel.gameObject.tag == "Humo")
+        //    {
+        //        humo = sel.GetComponent<ParticleSystem>();
+        //    }
+        //}
+        //humito = humo.GetComponent<Renderer>();
+        print(humito);
         if (agua)
         {
             aguarenderer.material = aguaColor;
+            particulas.material = azulBurbuja;
+            humito.material = humoBlanco;
+            //var colorLifeTime = humo.colorOverLifetime.color.color;
+            //colorLifeTime = new ParticleSystem.MinMaxGradient(new ParticleSystem.MinMaxGradient(azulVector.x, azulVector.y, azulVector.z, azulVector.w));           
+            //colorLifeTime = new Color(200, 200, 200, 25);
+            // = new ParticleSystem.MinMaxGradient(new Color(azulVector.x,azulVector.y,azulVector.z,azulVector.w));
         }
         else if (rojo)
         {
             aguarenderer.material = rojoColor;
+            humito.material = humoRojo;
+            //var colorLifeTime = humo.colorOverLifetime.color;
+            //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(236, 51, 64, 25));
+
         }
         else if (verde)
         {
             aguarenderer.material = verdeColor;
+            humito.material = humoVerde;
+            //var colorLifeTime = humo.colorOverLifetime.color;
+            //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
         }
     }
-
+    
     public void ChangeMatRojo()
     {
         aguarenderer.material = rojoColor;
+        particulas.material = rojoBurbuja;
+        humito.material = humoRojo;
+        //var colorLifeTime = humo.colorOverLifetime.color;
+        //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(236, 51, 64, 25));
     }
 
     public void ChangeMatVerde()
     {
         aguarenderer.material = verdeColor;
+        particulas.material = verdeBurbuja;
+        humito.material = humoVerde;
+
+        //var colorLifeTime = humo.colorOverLifetime.color;
+        //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
     }
 }

@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 280
+  m_VersionIndex: 289
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2092,7 +2092,7 @@ GameObject:
   - component: {fileID: 2254927537366529775}
   m_Layer: 0
   m_Name: Humo
-  m_TagString: Untagged
+  m_TagString: Humo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2300,9 +2300,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 2
-      minColor: {r: 0.013854995, g: 0.16299999, b: 0.026155613, a: 0.09803922}
-      maxColor: {r: 0.016156862, g: 0.206, b: 0, a: 0.09803922}
+      minMaxState: 0
+      minColor: {r: 0.013854995, g: 0.16299999, b: 0.026155613, a: 0.05490196}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3387,8 +3387,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.02748123, g: 0.5660378, b: 0.024029896, a: 1}
-        key1: {r: 0.02748123, g: 0.5660378, b: 0.024029896, a: 0.15686275}
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0.019607844}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3396,7 +3396,7 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 65535
+        ctime1: 65342
         ctime2: 0
         ctime3: 0
         ctime4: 0
@@ -7080,10 +7080,19 @@ MonoBehaviour:
   rojoColor: {fileID: 2100000, guid: 89a6474013f14e943b39e77ce0244946, type: 2}
   verdeColor: {fileID: 2100000, guid: cd24a1a0195b28e4cbd3951e16e90346, type: 2}
   aguaColor: {fileID: 2100000, guid: ddf88c1ce92d92b4a883e01229715d68, type: 2}
+  rojoBurbuja: {fileID: 2100000, guid: 9575ee6950022b64b8b3d7a0d7440d80, type: 2}
+  verdeBurbuja: {fileID: 2100000, guid: f9e42f1a366761946995771e14f408eb, type: 2}
+  azulBurbuja: {fileID: 2100000, guid: 2fd47f2c653067e4eb3656f262f76654, type: 2}
+  humoBlanco: {fileID: 2100000, guid: 97a2aab9fa69ec945a578ecd8a11dc6b, type: 2}
+  humoRojo: {fileID: 2100000, guid: 4106a3922121f194ca2d4ef9eade399c, type: 2}
+  humoVerde: {fileID: 2100000, guid: f5073368df31d134abc4750e05d323c8, type: 2}
   aguarenderer: {fileID: 0}
+  particulas: {fileID: 0}
+  humito: {fileID: 2254927537366529775}
   agua: 1
   rojo: 0
   verde: 0
+  humo: {fileID: 6302681176317478425}
 --- !u!1 &3483228554839070199
 GameObject:
   m_ObjectHideFlags: 0
@@ -9160,7 +9169,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 280
+  m_VersionIndex: 289
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -9178,7 +9187,7 @@ GameObject:
   - component: {fileID: 5668490402453476998}
   m_Layer: 0
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: Particulas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

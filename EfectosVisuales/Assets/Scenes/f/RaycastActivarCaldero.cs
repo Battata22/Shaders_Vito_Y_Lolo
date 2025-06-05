@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RaycastActivarCaldero : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class RaycastActivarCaldero : MonoBehaviour
             VolcarPocion();
 
             AgarrarPocion();
+        }
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
