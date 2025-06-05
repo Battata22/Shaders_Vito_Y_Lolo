@@ -4,22 +4,42 @@ using UnityEngine;
 
 public class CalderoBehaviour : MonoBehaviour, ICaldero
 {
-    // Start is called before the first frame update
+    [SerializeField] Material rojoColor, verdeColor, aguaColor;
+    [SerializeField] Renderer aguarenderer;
+    [SerializeField] bool agua, rojo, verde;
+
     void Start()
     {
-        mio = GetComponent<Renderer>();
+        var go = GetComponentsInChildren<Renderer>();
+        foreach (var sel in go)
+        {
+            if (sel.gameObject.tag == "Agua")
+            {
+                aguarenderer = sel.GetComponent<Renderer>();
+            }
+        }
+
+        if (agua)
+        {
+            aguarenderer.material = aguaColor;
+        }
+        else if (rojo)
+        {
+            aguarenderer.material = rojoColor;
+        }
+        else if (verde)
+        {
+            aguarenderer.material = verdeColor;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeMatRojo()
     {
-        
+        aguarenderer.material = rojoColor;
     }
 
-    public Material rojo, violeta, verde, agua;
-    public Renderer mio;
-    public void ChangeMat()
+    public void ChangeMatVerde()
     {
-        mio.material = rojo;
+        aguarenderer.material = verdeColor;
     }
 }
