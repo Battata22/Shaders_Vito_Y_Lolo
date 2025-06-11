@@ -337699,11 +337699,37 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3940577965371569626, guid: 728634d9e62cc0443b8cf814e1910e29,
+        type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1366024809}
     - targetCorrespondingSourceObject: {fileID: 2596093822634359891, guid: 728634d9e62cc0443b8cf814e1910e29,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 48213237}
   m_SourcePrefab: {fileID: 100100000, guid: 728634d9e62cc0443b8cf814e1910e29, type: 3}
+--- !u!1 &1366024808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3940577965371569626, guid: 728634d9e62cc0443b8cf814e1910e29,
+    type: 3}
+  m_PrefabInstance: {fileID: 1366024807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1366024809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366024808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b1f7623c5695aa418390451e0835591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 0
+  maxlife: 0
+  damage: 0
+  velocity: 0
 --- !u!1 &1418153133
 GameObject:
   m_ObjectHideFlags: 0

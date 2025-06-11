@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Caldera : MonoBehaviour
+public interface IEnemy
 {
-   
+    public void TakeDamage(int damage);
 }
