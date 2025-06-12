@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2333964067126249060}
   - component: {fileID: -2778994432298711289}
   m_Layer: 0
-  m_Name: FireBallPrefab
+  m_Name: WaterBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

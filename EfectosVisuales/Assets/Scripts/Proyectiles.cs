@@ -8,7 +8,8 @@ public class Proyectiles : MonoBehaviour
     [Header("References")]
     public Transform cam;
     public Transform attackPoint;
-    public GameObject objectToThrow;
+    public BaseBall objectToThrow;
+    public BaseBall[] balls;
 
     [Header("Settings")]
     public int totalThrows;
@@ -32,6 +33,19 @@ public class Proyectiles : MonoBehaviour
         {
             Throw();
         }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            objectToThrow = balls[0];
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) 
+        { 
+            objectToThrow = balls[1]; 
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            objectToThrow = balls[2];
+        }
+
     }
 
     private void Throw()
@@ -39,7 +53,7 @@ public class Proyectiles : MonoBehaviour
         readyToThrow = false;
 
         //instancia objeto a tirar
-        GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
+        var projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
 
         //rigidbody
         Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();

@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Player : CharacterBase
 {
+    public int Damage { get { return damage; } }
     protected override void Start()
     {
         base.Start();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        EntityManager.instance.player = this;
     }
 
 }
+
+
 
 
 

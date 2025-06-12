@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWater : CharacterBase, IEnemy
+public class EnemyFire : CharacterBase, IEnemy
 {
     protected override void Start()
     {
-       base.Start();
+        base.Start();
     }
-
 
     public void TakeDamage(int damage)
     {
@@ -16,9 +15,10 @@ public class EnemyWater : CharacterBase, IEnemy
         {
             life -= damage;
         }
-        else 
+        else
         {
             Destroy(gameObject);
-        } 
+        }
     }
+
 }

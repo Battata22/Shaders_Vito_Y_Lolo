@@ -8,7 +8,6 @@ public abstract class CharacterBase : MonoBehaviour
     [SerializeField] protected int life;
     [SerializeField] protected int maxlife;
     [SerializeField] protected int damage;
-    [SerializeField] protected float velocity;
 
     protected virtual void Start()
     {
