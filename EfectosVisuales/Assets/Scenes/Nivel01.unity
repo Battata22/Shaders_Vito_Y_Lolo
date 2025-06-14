@@ -337818,6 +337818,10 @@ PrefabInstance:
         type: 3}
       insertIndex: 2
       addedObject: {fileID: 1366024809}
+    - targetCorrespondingSourceObject: {fileID: 3940577965371569626, guid: 728634d9e62cc0443b8cf814e1910e29,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1366024815}
     - targetCorrespondingSourceObject: {fileID: 2596093822634359891, guid: 728634d9e62cc0443b8cf814e1910e29,
         type: 3}
       insertIndex: -1
@@ -337844,6 +337848,18 @@ MonoBehaviour:
   life: 0
   maxlife: 100
   damage: 10
+--- !u!114 &1366024815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366024808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17497555684a0fb418cf03a91c9e06ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1418153133
 GameObject:
   m_ObjectHideFlags: 0
@@ -338366,6 +338382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fuego
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405666794997959566, guid: 96666d4e53379614785a762747cf4f2d,
+        type: 3}
+      propertyPath: type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5747108362002102639, guid: 96666d4e53379614785a762747cf4f2d,
         type: 3}

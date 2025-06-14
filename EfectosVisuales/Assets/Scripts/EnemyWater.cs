@@ -2,23 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWater : CharacterBase, IEnemy
+public class EnemyWater : EnemyBase
 {
     protected override void Start()
     {
        base.Start();
+        type = EnemyType.Water;
     }
 
-
-    public void TakeDamage(int damage)
+    void ParticulasMuerte()
     {
-        if (life - damage >= 0)
-        {
-            life -= damage;
-        }
-        else 
-        {
-            Destroy(gameObject);
-        } 
+        print("Particulas " + gameObject.name);
+    }
+
+    void AudioMuerte()
+    {
+        print("Audio " + gameObject.name);
+    }
+
+    protected override void OnDestroy()
+    {
+        meMuero += ParticulasMuerte;
+        meMuero += AudioMuerte;
+        base.OnDestroy();
+        meMuero -= ParticulasMuerte;
+        meMuero -= AudioMuerte;
+
     }
 }

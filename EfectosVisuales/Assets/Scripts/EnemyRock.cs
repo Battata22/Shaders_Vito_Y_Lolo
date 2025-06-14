@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyFire : EnemyBase
+public class EnemyRock : EnemyBase
 {
     protected override void Start()
     {
         base.Start();
-        type = EnemyType.Fire;
+        type = EnemyType.Rock;
     }
 
-   void ParticulasMuerte()
-   {
+    void ParticulasMuerte()
+    {
         print("Particulas " + gameObject.name);
-   }
+    }
 
     void AudioMuerte()
     {

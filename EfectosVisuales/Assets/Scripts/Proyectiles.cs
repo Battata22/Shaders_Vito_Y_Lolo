@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Diagnostics.Tracing;
+using System;
 
 public class Proyectiles : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Proyectiles : MonoBehaviour
     public Transform attackPoint;
     public BaseBall objectToThrow;
     public BaseBall[] balls;
+    //public event Action Evento;
 
     [Header("Settings")]
     public int totalThrows;
@@ -20,35 +23,44 @@ public class Proyectiles : MonoBehaviour
     public float throwForce;
     public float throwUpwardForce;
 
-    bool readyToThrow;
+    public bool readyToThrow;
+    ControlesPlayer controlesScript;
 
     private void Start()
     {
         readyToThrow = true;
+        //Evento += Throw;
+        //PruebaDeEvento.instance.eventoTest += Throw;
+        controlesScript = new ControlesPlayer(this);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
-        {
-            Throw();
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            objectToThrow = balls[0];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) 
-        { 
-            objectToThrow = balls[1]; 
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            objectToThrow = balls[2];
-        }
+        controlesScript.ArtificialUpdate();
+
+        //if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
+        //{
+        //    //Evento();
+        //    Throw();
+        //}
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    objectToThrow = balls[0];
+        //}
+        //else if (Input.GetKeyDown(KeyCode.Alpha2)) 
+        //{ 
+        //    objectToThrow = balls[1]; 
+        //}
+        //else if (Input.GetKeyDown(KeyCode.Alpha3))
+        //{
+        //    objectToThrow = balls[2];
+        //}
+
+
 
     }
 
-    private void Throw()
+    public void Throw()
     {
         readyToThrow = false;
 
