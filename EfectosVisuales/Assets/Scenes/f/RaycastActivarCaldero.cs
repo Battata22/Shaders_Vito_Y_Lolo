@@ -23,6 +23,10 @@ public class RaycastActivarCaldero : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            CurarseCaldero();
+        }
     }
 
     void ActualizarTexto()
@@ -90,6 +94,21 @@ public class RaycastActivarCaldero : MonoBehaviour
         }
     }
 
+    void CurarseCaldero()
+    {
+
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Camera.main.transform.forward, out hit))
+            {
+                if (hit.collider.gameObject.GetComponent<ICaldero>() != null)
+                {
+                  hit.collider.gameObject.GetComponent<ICaldero>().DetectMaterial();
+                  
+                }
+            }
+        
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
@@ -101,5 +120,6 @@ public interface ICaldero
 {
     public void ChangeMatVerde();
     public void ChangeMatRojo();
+    public void DetectMaterial();
 
 }

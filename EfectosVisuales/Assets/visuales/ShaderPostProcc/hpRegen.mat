@@ -29,6 +29,7 @@ Material:
     m_Floats:
     - _BreathVignette: 1
     - _Fullscreen_DepthWrite: 0
+    - _PrendidoHPRegen: 0
     - _SaturationLevels: 0.61
     - _TimeVelocity: 8.78
     - _VignetteIntensity: 1.84

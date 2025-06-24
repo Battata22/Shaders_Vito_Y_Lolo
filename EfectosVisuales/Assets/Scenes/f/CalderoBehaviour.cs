@@ -67,6 +67,8 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
     
     public void ChangeMatRojo()
     {
+        ResetBools();
+        rojo = true;
         aguarenderer.material = rojoColor;
         particulas.material = rojoBurbuja;
         humito.material = humoRojo;
@@ -76,11 +78,30 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
 
     public void ChangeMatVerde()
     {
+        ResetBools();
+        verde = true;
         aguarenderer.material = verdeColor;
         particulas.material = verdeBurbuja;
         humito.material = humoVerde;
 
         //var colorLifeTime = humo.colorOverLifetime.color;
         //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
+    }
+
+    public void ResetBools()
+    {
+        agua = false;
+        rojo = false;
+       verde = false;
+    }
+    public void DetectMaterial()
+    {
+        if(verde == true)
+        {
+            PostProcessManager.instance.ActivarRegenHP();
+            EntityManager.instance.player.FullLife();
+
+        }
+        
     }
 }

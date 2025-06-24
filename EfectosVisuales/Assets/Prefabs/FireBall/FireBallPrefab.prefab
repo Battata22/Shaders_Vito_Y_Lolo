@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7074462180536476290}
   - component: {fileID: 2333964067126249060}
   - component: {fileID: -2778994432298711289}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireBallPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3115518618137679828}
   - component: {fileID: 8855571231290220297}
   - component: {fileID: 1191156422805289041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4936,7 +4936,7 @@ GameObject:
   - component: {fileID: 563555193453631921}
   - component: {fileID: 6610397965934469953}
   - component: {fileID: 143437230314989709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}

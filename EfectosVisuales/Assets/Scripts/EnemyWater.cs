@@ -29,4 +29,12 @@ public class EnemyWater : EnemyBase
         meMuero -= AudioMuerte;
 
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.GetComponent<Player>() != null) 
+        {
+            EntityManager.instance.player.GetDamage(damage);
+        }
+    }
 }
