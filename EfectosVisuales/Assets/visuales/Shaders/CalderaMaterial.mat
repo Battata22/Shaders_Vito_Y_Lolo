@@ -62,8 +62,8 @@ Material:
     - _EspumaSize: 0.91
     - _FoamDistance: 0.06
     - _FoamFallOff: 1.48
-    - _NoiseSizeA: 22.5
-    - _NoiseSizeB: 14.8
+    - _NoiseSizeA: 57.2
+    - _NoiseSizeB: 40
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 1
