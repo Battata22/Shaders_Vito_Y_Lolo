@@ -42,13 +42,14 @@ Material:
     - _Distortion: 0.03
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SpeedX: 0.02
-    - _SpeedY: 0.03
+    - _Smoothness: 1
+    - _SpeedX: 0.1
+    - _SpeedY: 0.1
     - _VertexDisplacement: 0.05
     - _Vertex_Speed: 0.4
     m_Colors:
     - _Color: {r: 0, g: 0.2928377, b: 0.6603774, a: 0}
-    - _Tiling_Scale: {r: 2.83, g: 2.6, b: 0, a: 0}
+    - _Tiling_Scale: {r: 2.6, g: 2.6, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7644345854828516322
 MonoBehaviour:
