@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6646594927499220673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Drogado
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: 27af77d9904a4f74dbae9f0a22721874, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +73,9 @@ MonoBehaviour:
   - {fileID: 715291951467294284}
   - {fileID: 6860253779319588754}
   - {fileID: 3444993463627233357}
-  m_RendererFeatureMap: adc0de57c6d2eee54c6ee7753d3aed09920760117784345f4d380b854d13cf2f
+  - {fileID: -6646594927499220673}
+  - {fileID: 5916361352936294587}
+  m_RendererFeatureMap: adc0de57c6d2eee54c6ee7753d3aed09920760117784345f4d380b854d13cf2f3fe97eec208dc2a3bb089ee44d231b52
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -132,6 +151,23 @@ MonoBehaviour:
   passMaterial: {fileID: 2100000, guid: ab05dcaf4c38d964c9a21234d60deac8, type: 2}
   injectionPoint: 600
   requirements: 0
+  passIndex: 0
+--- !u!114 &5916361352936294587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: BajoElMar
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passMaterial: {fileID: 2100000, guid: ca876c92d9e1e2b4a96bd86319c98e24, type: 2}
+  injectionPoint: 600
+  requirements: 4
   passIndex: 0
 --- !u!114 &6860253779319588754
 MonoBehaviour:
