@@ -41,8 +41,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalFromTexture_55e3c7017d1943bc9399331deaa330a2_Texture_0_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_4c34eadf00154f66843acd69c8e48c08_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 28a38160ce1857a489c896a32dedc841, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4a45f872a3675944db31c3dfbdfc676f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -60,14 +68,25 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha: 1
-    - _Fresnel: 0.19
+    - _Fresnel: 0.151
+    - _Noise: 125.2
     - _NormalOffset: 8
-    - _NormalStrength: 8
+    - _NormalStrength: 2.45
     - _QueueControl: 1
     - _QueueOffset: 0
+    - _Smoothness: 0.6
+    - _Step: 0.52
+    - _Tiling: 5.07
+    - _Tiling2: 1.57
+    - _Tiling3: 1.28
     - _macucas: 0.02
+    - _voronoi: 4.9
+    - _voronoi2: 18.06
     m_Colors:
-    - _Color: {r: 0, g: 0.74150085, b: 1, a: 1}
-    - _Color_1: {r: 0, g: 0.7544947, b: 1, a: 0}
+    - _Color: {r: 0, g: 2.2530687, b: 3.9999995, a: 1}
+    - _Color_1: {r: 0, g: 0.16134393, b: 0.98039216, a: 0}
+    - _Color_2: {r: 0, g: 0.5882354, b: 1, a: 0}
+    - _FresnelColor: {r: 0.8349056, g: 0.9682511, b: 1, a: 0}
+    - _Metalic: {r: 0, g: 0, b: 0, a: 0}
     - _TilingHielo: {r: 1.4, g: 1.4, b: 0, a: 0}
   m_BuildTextureStacks: []
