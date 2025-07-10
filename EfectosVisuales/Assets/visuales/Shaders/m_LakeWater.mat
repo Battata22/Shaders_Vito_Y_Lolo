@@ -33,7 +33,7 @@ Material:
     - _ControladorSize: 0.2
     - _EspumaSize: 0.91
     - _FoamDistance: 1.36
-    - _FoamFallOff: 0.79
+    - _FoamFallOff: 2.33
     - _NoiseSizeA: 204.5
     - _NoiseSizeB: 94.1
     - _QueueControl: 0
@@ -44,8 +44,8 @@ Material:
     - _fallOff: 2.77
     - _maxEspuma: 1.23
     - _minEspuma: 1.18
-    - _speedOlasPanerX: 0.17
-    - _speedOlasPanerY: 0.18
+    - _speedOlasPanerX: 0.08
+    - _speedOlasPanerY: 0.09
     - _speedX: 0.01
     - _speedY: 0.01
     m_Colors:
