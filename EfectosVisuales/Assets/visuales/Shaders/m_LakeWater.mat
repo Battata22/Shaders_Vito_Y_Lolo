@@ -30,7 +30,7 @@ Material:
     - _CausticSpeed: 0.005
     - _CausticTilling: 3.18
     - _CausticTillingB: -0.44
-    - _ControladorSize: 0.2
+    - _ControladorSize: 0.05
     - _EspumaSize: 0.91
     - _FoamDistance: 1.36
     - _FoamFallOff: 2.33
@@ -38,14 +38,14 @@ Material:
     - _NoiseSizeB: 94.1
     - _QueueControl: 0
     - _causticCutOut: 0.28
-    - _distance: 7.69
-    - _espumaSpeed: 0.98
+    - _distance: 2.44
+    - _espumaSpeed: 0.21
     - _espumaTilling: 2.07
-    - _fallOff: 2.77
+    - _fallOff: 3.76
     - _maxEspuma: 1.23
     - _minEspuma: 1.18
-    - _speedOlasPanerX: 0.08
-    - _speedOlasPanerY: 0.09
+    - _speedOlasPanerX: 0
+    - _speedOlasPanerY: 0.2
     - _speedX: 0.01
     - _speedY: 0.01
     m_Colors:
