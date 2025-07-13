@@ -86,9 +86,6 @@
         },
         {
             "m_Id": "c15a7a7d28964dc4873e5a223e16e0b3"
-        },
-        {
-            "m_Id": "a88aafb269734862845391b74440e0b7"
         }
     ],
     "m_Keywords": [],
@@ -5921,9 +5918,6 @@
         },
         {
             "m_Id": "d07c6285b3a9464baec6af5ddb0fd852"
-        },
-        {
-            "m_Id": "a88aafb269734862845391b74440e0b7"
         }
     ]
 }
@@ -7268,34 +7262,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "a88aafb269734862845391b74440e0b7",
-    "m_Guid": {
-        "m_GuidSerialized": "ba14c649-70a3-41c1-9acd-8fa8be858d47"
-    },
-    "m_Name": "Disolve",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Disolve",
-    "m_DefaultReferenceName": "_Disolve",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 0.0,
-    "m_FloatType": 1,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
     }
 }
 
