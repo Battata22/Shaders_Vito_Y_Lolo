@@ -40,21 +40,24 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _CautiscSpeed: 0.23
-    - _CautiscTilling: 0.47
-    - _CautistTillingB: -0.42
+    - _CautiscSpeed: 0.005
+    - _CautiscTilling: 5.3
+    - _CautistTillingB: -0.43
     - _ControladorSize: 0.1
     - _EspumaSpeed: 0.98
     - _EspumaTilling: 2.07
     - _FoamDepth: 1.36
     - _FoamFalloff: 0.79
     - _FoamSize: 0.91
+    - _NormalScale: 58.6
+    - _NormalScale2: 34.8
+    - _NormalStrenght: 5.91
     - _QueueControl: 0
     - _X_o_Y: 0
     - _alpha: 1.19
     - _alphaSize: 6.63
-    - _causticCutOut: 0.28
-    - _distance: 4.39
+    - _causticCutOut: 0.17
+    - _distance: 3.84
     - _espumaSpeedX: 0.2
     - _espumaSpeedY: 0.2
     - _fallOff: 1.06
@@ -64,10 +67,10 @@ Material:
     - _speedOlas: 0.1
     - _speedOlasPanerX: 0
     - _speedOlasPanerY: 0.3
-    - _speed_X: 0.1
-    - _speed_Y: 0.13
+    - _speed_X: 0.01
+    - _speed_Y: 0.001
     m_Colors:
-    - _Base_Color: {r: 0.16691881, g: 0.21571024, b: 0.2924528, a: 0.8156863}
+    - _Base_Color: {r: 0, g: 0.3183962, b: 0.8490566, a: 0.8156863}
     - _CautiscColor: {r: 13.255386, g: 13.255386, b: 13.255386, a: 1}
     - _ColorDepthFade: {r: 0.36690098, g: 0.9150943, b: 0.9150943, a: 0}
     - _ColorEspuma: {r: 0.98039216, g: 0.98039216, b: 0.98039216, a: 0.21960784}
