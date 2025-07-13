@@ -1,0 +1,205 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using Unity.VisualScripting;
+
+public class Selector2 : MonoBehaviour
+{
+    /*
+    [SerializeField] float scale;
+    Image imagen;
+    int verde, selectedActual;
+    
+
+    void Start()
+    {
+        imagen = GetComponent<Image>();
+    }
+
+
+    void Update()
+    {
+        if (SelectorItems.habAct == int.Parse(gameObject.name))
+        {
+            imagen.color = Color.green;
+        }
+        else
+        {
+            imagen.color = Color.gray;
+        }
+
+
+        
+            if (Input.GetKeyUp(KeyCode.Alpha1))
+            {
+                SelectorItems.habAct = 1;
+            }
+            else if (Input.GetKeyUp(KeyCode.Alpha2))
+            {
+                SelectorItems.habAct = 2;
+            }
+            else if (Input.GetKeyUp(KeyCode.Alpha3))
+            {
+                SelectorItems.habAct = 3;
+            }
+            else if (Input.GetKeyUp(KeyCode.Alpha4))
+            {
+                SelectorItems.habAct = 4;
+            }
+            else if (Input.GetKeyUp(KeyCode.Alpha5))
+            {
+                SelectorItems.habAct = 5;
+            }
+
+        SelectedAction();
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        selectedActual = int.Parse(gameObject.name);
+    }
+
+    
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        gameObject.transform.localScale = Vector3.one;
+
+        selectedActual = 0;
+    }
+
+    public void SelectedAction()
+    {
+        if (selectedActual == 1)
+        {
+            Opc1();
+        }
+        else if (selectedActual == 2)
+        {
+            Opc2();
+        }
+        else if (selectedActual == 3)
+        {
+            Opc3();
+        }
+        else if (selectedActual == 4)
+        {
+            Opc4();
+        }
+        else if (selectedActual == 5)
+        {
+            Opc5();
+        }
+        else if (selectedActual == 6)
+        {
+            Opc6();
+        }
+        else if (selectedActual == 7)
+        {
+            Opc7();
+        }
+        else if (selectedActual == 8)
+        {
+            Opc8();
+        }
+    }
+
+    public void Opc1()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print($"click {gameObject.name} : Tornado");
+        }
+
+        SelectorItems.habAct = 1;
+    }
+
+    public void Opc2()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print($"click {gameObject.name} : Sombra");
+        }
+
+        SelectorItems.habAct = 2;
+    }
+
+    public void Opc3()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print($"click {gameObject.name} : Encantar");
+        }
+
+        SelectorItems.habAct = 3;
+    }
+
+    public void Opc4()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print($"click {gameObject.name} : Moco");
+        }
+
+        SelectorItems.habAct = 4;
+    }
+
+    public void Opc5()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print($"click {gameObject.name} : TrapWire");
+        }
+
+        SelectorItems.habAct = 5;
+    }
+
+    public void Opc6()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("click " + gameObject.name);
+        }
+
+        SelectorItems.habAct = 6;
+    }
+
+    public void Opc7()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("click " + gameObject.name);
+        }
+
+        SelectorItems.habAct = 7;
+    }
+
+    public void Opc8()
+    {
+        gameObject.transform.localScale = new Vector3(scale, scale, scale);
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("click " + gameObject.name);
+        }
+
+        SelectorItems.habAct = 8;
+    }
+    */
+}
