@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CalderoBehaviour : MonoBehaviour, ICaldero
 {
-    [SerializeField] Material rojoColor, verdeColor, aguaColor, rojoBurbuja, verdeBurbuja, azulBurbuja, humoBlanco, humoRojo, humoVerde;
+    [SerializeField] Material rojoColor, verdeColor, amarilloColor, violetaColor, aguaColor, rojoBurbuja, verdeBurbuja, amarilloBurbuja, azulBurbuja, violetaBurbuja, humoBlanco, humoRojo, humoVerde, humoAmarillo, humoVioleta;
     [SerializeField] Renderer aguarenderer, particulas, humito;
-    [SerializeField] bool agua, rojo, verde;
+    [SerializeField] bool agua, rojo, verde, amarillo, violeta;
     [SerializeField] ParticleSystem humo;
 
     void Start()
@@ -63,6 +63,20 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
             //var colorLifeTime = humo.colorOverLifetime.color;
             //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
         }
+        else if (amarillo)
+        {
+            aguarenderer.material = amarilloColor;
+            humito.material = humoAmarillo;
+            //var colorLifeTime = humo.colorOverLifetime.color;
+            //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
+        }
+        else if (violeta)
+        {
+            aguarenderer.material = violetaColor;
+            humito.material = humoVioleta;
+            //var colorLifeTime = humo.colorOverLifetime.color;
+            //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
+        }
     }
     
     public void ChangeMatRojo()
@@ -87,12 +101,37 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
         //var colorLifeTime = humo.colorOverLifetime.color;
         //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
     }
+    public void ChangeMatAmarillo()
+    {
+        ResetBools();
+        amarillo = true;
+        aguarenderer.material = amarilloColor;
+        particulas.material = amarilloBurbuja;
+        humito.material = humoAmarillo;
+
+        //var colorLifeTime = humo.colorOverLifetime.color;
+        //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
+    }
+    public void ChangeMatVioleta()
+    {
+        ResetBools();
+        amarillo = true;
+        aguarenderer.material = violetaColor;
+        particulas.material = violetaBurbuja;
+        humito.material = humoVioleta;
+
+        //var colorLifeTime = humo.colorOverLifetime.color;
+        //colorLifeTime = new ParticleSystem.MinMaxGradient(new Color(4, 53, 0, 25));
+    }
 
     public void ResetBools()
     {
         agua = false;
         rojo = false;
        verde = false;
+       amarillo = false;
+       violeta = false;
+
     }
     public void DetectMaterial()
     {
@@ -102,6 +141,24 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
             EntityManager.instance.player.FullLife();
 
         }
-        
+        if (amarillo == true)
+        {
+            PostProcessManager.instance.ActivarPCuraSlime();
+            EntityManager.instance.player.FullLife();
+
+        }
+        if (rojo == true)
+        {
+            PostProcessManager.instance.ActivarPVida();
+            EntityManager.instance.player.FullLife();
+
+        }
+        if (violeta == true)
+        {
+            PostProcessManager.instance.ActivarPMana();
+            EntityManager.instance.player.FullLife();
+
+        }
+
     }
 }

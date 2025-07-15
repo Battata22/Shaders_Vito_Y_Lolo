@@ -6,6 +6,9 @@ public class PostProcessManager : MonoBehaviour
     public Material lowHp;
     public Material regenHp;
     public Material meQuemo;
+    public Material crearPCuraSlime;
+    public Material crearPVida;
+    public Material crearPMana;
     public float waitTimer;
     public float timer;
     public bool efectoPrendido = false;
@@ -30,6 +33,12 @@ public class PostProcessManager : MonoBehaviour
         regenHp.SetFloat("_PrendidoHPRegen", 0);
 
         meQuemo.SetFloat("_PrendidoQuemar", 0);
+
+        crearPCuraSlime.SetFloat("_CrearPCuraSlime", 0);
+
+        crearPVida.SetFloat("_CrearPVida", 0);
+
+        crearPMana.SetFloat("_CrearPMana", 0);
 
     }
 
@@ -61,9 +70,40 @@ public class PostProcessManager : MonoBehaviour
         #endregion
     }
 
-    public void ActivarRegenHP() 
+    public void ActivarPCuraSlime() 
     { 
-        if(regenHp.GetFloat("_PrendidoHPRegen") == 0)
+        if(regenHp.GetFloat("_CrearPCuraSlime") == 0)
+        {
+            waitTimer = 0;
+            regenHp.SetFloat("_CrearPCuraSlime", 1);
+            efectoPrendido = true;
+        }
+    }
+
+    public void ActivarPVida()
+    {
+        if (regenHp.GetFloat("_CrearPVida") == 0)
+        {
+            waitTimer = 0;
+            regenHp.SetFloat("_CrearPVida", 1);
+            efectoPrendido = true;
+        }
+    }
+
+    public void ActivarPMana()
+    {
+        if (regenHp.GetFloat("_CrearPMana") == 0)
+        {
+            waitTimer = 0;
+            regenHp.SetFloat("_CrearPMana", 1);
+            efectoPrendido = true;
+        }
+    }
+
+
+    public void ActivarRegenHP()
+    {
+        if (regenHp.GetFloat("_PrendidoHPRegen") == 0)
         {
             waitTimer = 0;
             regenHp.SetFloat("_PrendidoHPRegen", 1);
