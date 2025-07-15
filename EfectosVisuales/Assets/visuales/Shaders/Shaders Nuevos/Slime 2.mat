@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Slime 1
+  m_Name: Slime 2
   m_Shader: {fileID: -6465566751694194690, guid: 0d5c27532ae19a84d8c3e6499962a9dc,
     type: 3}
   m_Parent: {fileID: 0}
@@ -54,27 +54,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 1a4dab76f4725924c86333a1c9a0f52a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_1:
-        m_Texture: {fileID: 2800000, guid: 1f297361d1ecf0b4d8ab708302f107ee, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_2:
-        m_Texture: {fileID: 2800000, guid: fd83da84cacec254caf44794821cda56, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_3:
-        m_Texture: {fileID: 2800000, guid: 69e3b8308051843478399bbd204840b8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_4:
-        m_Texture: {fileID: 2800000, guid: ccbb8af52242848418439ab6ea38bc3f, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_5:
-        m_Texture: {fileID: 2800000, guid: ff676a9c86fde254ca4bc3f2176bbf00, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -97,7 +97,7 @@ Material:
     - _LocalDisplacementSpeed: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1
+    - _Smoothness: 0.52
     - _SurfaceNoiseSpeed: 1
     - _SurfaceNoiseStrenght: 1
     - _Tiling: 0
@@ -105,12 +105,12 @@ Material:
     - _VertexSpeed: 0.1
     - _VoronoiScale: 2.7
     m_Colors:
-    - _BubbleEmission: {r: 0.1166668, g: 1, b: 0, a: 0}
-    - _Color: {r: 0.1166668, g: 1, b: 0, a: 0}
+    - _BubbleEmission: {r: 0.068067856, g: 0.5660378, b: 0, a: 0}
+    - _Color: {r: 0.025692526, g: 0.2264151, b: 0, a: 0}
     - _Flow: {r: 0.2, g: 0.2, b: 0, a: 0}
     - _LocalDisplacementStrength: {r: 0, g: 0, b: 0, a: 0}
-    - _SplurColor: {r: 0.8468182, g: 0.98999995, b: 0.4868182, a: 0}
-    - _SplurEmission: {r: 0.1166668, g: 1, b: 0, a: 0}
+    - _SplurColor: {r: 0.5584727, g: 1, b: 0.4198113, a: 0}
+    - _SplurEmission: {r: 0.07714889, g: 0.6509434, b: 0, a: 0}
     - _Tiling2: {r: 1, g: 1, b: 0, a: 0}
     - _Tiling3: {r: 2, g: 2, b: 0, a: 0}
     - _Tiling4: {r: 2.21, g: 2.21, b: 0, a: 0}

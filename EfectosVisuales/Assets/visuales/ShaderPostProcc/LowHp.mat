@@ -34,7 +34,7 @@ Material:
     - _Fullscreen_DstAlphaBlend: 10
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcColorBlend: 5
-    - _PrendidoLowHP: 1
+    - _PrendidoLowHP: 0
     - _Saturation: 0.26
     - _SaturationLevels: 0
     - _SmallCellsScale: 53.5
