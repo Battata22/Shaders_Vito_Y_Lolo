@@ -40,5 +40,9 @@ public class ControlesPlayer
         {
             script.objectToThrow = script.balls[2];
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            script.objectToThrow = script.balls[3];
+        }
     }
 }

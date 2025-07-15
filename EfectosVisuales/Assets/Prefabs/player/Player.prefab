@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130409620031066614}
-  m_Layer: 0
+  - component: {fileID: 8348829481540751237}
+  m_Layer: 3
   m_Name: camPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7997404211450611007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8348829481540751237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596093822634359891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861c26358f4f2b4ebcb8d32f9a45ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rango: 0
+  inventario: []
+  textInventario: {fileID: 0}
 --- !u!1 &3940577965371569626
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,10 +57,13 @@ GameObject:
   m_Component:
   - component: {fileID: 7997404211450611007}
   - component: {fileID: 6993338837114315174}
+  - component: {fileID: 8909064607434781779}
   - component: {fileID: 1942767810449005246}
   - component: {fileID: 3117934449075164570}
   - component: {fileID: 4025292117744764054}
-  m_Layer: 0
+  - component: {fileID: 8799610236458001798}
+  - component: {fileID: 2333495299206381807}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +114,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8909064607434781779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940577965371569626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b1f7623c5695aa418390451e0835591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 0
+  maxlife: 100
+  damage: 10
 --- !u!114 &1942767810449005246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,13 +158,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   attackPoint: {fileID: 0}
-  objectToThrow: {fileID: 6939850769153011310, guid: 7cb3c6eb2173a3340ac4b5dd01e227ec,
+  objectToThrow: {fileID: -2778994432298711289, guid: e13437da38bb40644826eb522c3e5876,
     type: 3}
+  balls:
+  - {fileID: -2778994432298711289, guid: e13437da38bb40644826eb522c3e5876, type: 3}
+  - {fileID: -5255171084081011833, guid: 04cb08201ded53c4cbc480510a5592e7, type: 3}
+  - {fileID: -5255171084081011833, guid: 04cb08201ded53c4cbc480510a5592e7, type: 3}
+  - {fileID: -5255171084081011833, guid: 04cb08201ded53c4cbc480510a5592e7, type: 3}
   totalThrows: 100
   throwCooldown: 0.2
   throwKey: 114
-  throwForce: 70
+  throwForce: 50
   throwUpwardForce: 0
+  readyToThrow: 0
 --- !u!114 &4025292117744764054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +189,41 @@ MonoBehaviour:
   _fixedZ: 0.05
   _fixedY: 1.386
   _sensibilidad: 300
+--- !u!114 &8799610236458001798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940577965371569626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17497555684a0fb418cf03a91c9e06ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &2333495299206381807
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940577965371569626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.58
+  m_Height: 2.0408425
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.99242806, z: 0}
 --- !u!1 &5753600619950106860
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +235,7 @@ GameObject:
   - component: {fileID: 1866446947879870034}
   - component: {fileID: 2732836196172028325}
   - component: {fileID: 5506209201231567216}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +318,7 @@ GameObject:
   - component: {fileID: 2148908480555169741}
   - component: {fileID: 227786623128238396}
   - component: {fileID: 6013303267265481125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1666014029817071471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: orient
   m_TagString: Untagged
   m_Icon: {fileID: 0}

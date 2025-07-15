@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class PlayerNewMovement : MonoBehaviour
 {
-    float _xAxis, _zAxis;
     [SerializeField] float _speed;
     [SerializeField] float _jumpForce;
-    CharacterController _cc;
+    [SerializeField] float _gravedadMult;
 
+    CharacterController _cc;
     Vector3 _direccion;
+
+    float _xAxis, _zAxis;
+
 
     float _gravedad = -9.8f;
     float _yVelocity;
-    [SerializeField] float _gravedadMult;
+    
     private void Start()
     {
         _cc = GetComponent<CharacterController>();
@@ -21,7 +24,6 @@ public class PlayerNewMovement : MonoBehaviour
 
     void Update()
     {
-
         _xAxis = Input.GetAxisRaw("Horizontal");
         _zAxis = Input.GetAxisRaw("Vertical");
 
@@ -29,7 +31,6 @@ public class PlayerNewMovement : MonoBehaviour
         {
             Jump();
         }
-
     }
 
     private void FixedUpdate()
@@ -70,6 +71,5 @@ public class PlayerNewMovement : MonoBehaviour
         {
             _yVelocity += _jumpForce;
         }
-
     }
 }
