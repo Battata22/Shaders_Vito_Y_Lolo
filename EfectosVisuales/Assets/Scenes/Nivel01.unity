@@ -15427,6 +15427,9 @@ MonoBehaviour:
   lowHp: {fileID: 2100000, guid: 31cd58a78b044aa409c66a1576151dcb, type: 2}
   regenHp: {fileID: 2100000, guid: 944d9d5bba749c1479621bf34ee766fd, type: 2}
   meQuemo: {fileID: 2100000, guid: ab05dcaf4c38d964c9a21234d60deac8, type: 2}
+  crearPCuraSlime: {fileID: 0}
+  crearPVida: {fileID: 0}
+  crearPMana: {fileID: 0}
   waitTimer: 0
   timer: 4
   efectoPrendido: 0
@@ -433136,6 +433139,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 408785530072086049, guid: 3f11c1d3fe435a843b607ff00428ee8c,
+        type: 3}
+      propertyPath: humoVioleta
+      value: 
+      objectReference: {fileID: 2100000, guid: 95aff57444e241e41af5a8fa8d570328, type: 2}
+    - target: {fileID: 408785530072086049, guid: 3f11c1d3fe435a843b607ff00428ee8c,
+        type: 3}
+      propertyPath: humoAmarillo
+      value: 
+      objectReference: {fileID: 2100000, guid: b1687d5a410e01045b425ca9c0cf73c0, type: 2}
+    - target: {fileID: 408785530072086049, guid: 3f11c1d3fe435a843b607ff00428ee8c,
+        type: 3}
+      propertyPath: violetaColor
+      value: 
+      objectReference: {fileID: 2100000, guid: 004de47fddda09d419b0531b2627c5cc, type: 2}
+    - target: {fileID: 408785530072086049, guid: 3f11c1d3fe435a843b607ff00428ee8c,
+        type: 3}
+      propertyPath: amarilloColor
+      value: 
+      objectReference: {fileID: 2100000, guid: debbdd1a222499748b4dba61f8dc4349, type: 2}
+    - target: {fileID: 408785530072086049, guid: 3f11c1d3fe435a843b607ff00428ee8c,
+        type: 3}
+      propertyPath: violetaBurbuja
+      value: 
+      objectReference: {fileID: 2100000, guid: e2d7b6757c05b114f9998a6bf1aa67d0, type: 2}
+    - target: {fileID: 408785530072086049, guid: 3f11c1d3fe435a843b607ff00428ee8c,
+        type: 3}
+      propertyPath: amarilloBurbuja
+      value: 
+      objectReference: {fileID: 2100000, guid: ddeb4f956bea0194dbb8da871ecabd94, type: 2}
     - target: {fileID: 1569950816697926732, guid: 3f11c1d3fe435a843b607ff00428ee8c,
         type: 3}
       propertyPath: m_Mesh

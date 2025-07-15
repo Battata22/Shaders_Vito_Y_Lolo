@@ -121,7 +121,6 @@ public interface ICaldero
     public void ChangeMatVerde();
     public void ChangeMatRojo();
     public void ChangeMatAmarillo();
-
     public void ChangeMatVioleta();
     public void DetectMaterial();
 
