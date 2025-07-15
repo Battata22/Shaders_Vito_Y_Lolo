@@ -15427,9 +15427,9 @@ MonoBehaviour:
   lowHp: {fileID: 2100000, guid: 31cd58a78b044aa409c66a1576151dcb, type: 2}
   regenHp: {fileID: 2100000, guid: 944d9d5bba749c1479621bf34ee766fd, type: 2}
   meQuemo: {fileID: 2100000, guid: ab05dcaf4c38d964c9a21234d60deac8, type: 2}
-  crearPCuraSlime: {fileID: 0}
-  crearPVida: {fileID: 0}
-  crearPMana: {fileID: 0}
+  crearPCuraSlime: {fileID: 2100000, guid: c53fe4399fd6c384a83cd2959555a048, type: 2}
+  crearPVida: {fileID: 2100000, guid: 81f4fe82c9687d44abc48edb3e33617d, type: 2}
+  crearPMana: {fileID: 2100000, guid: 6192529fe421c614f8d6aaa93e24373d, type: 2}
   waitTimer: 0
   timer: 4
   efectoPrendido: 0
