@@ -55,7 +55,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaNoise: 34.94
+    - _AlphaNoise: 2.02
     - _Borde_Power: 4.85
     - _CausticCutOut: 0
     - _CausticasSpeed: 0
@@ -67,7 +67,7 @@ Material:
     - _Normalspeed: -0.3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _StepAlpha: 0.023
+    - _StepAlpha: 1.02
     - _WaveStrength: -0.001
     - _distance: 4.21
     - _distanceDepth: 1
