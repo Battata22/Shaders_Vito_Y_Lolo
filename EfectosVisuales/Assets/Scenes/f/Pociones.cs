@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pociones : MonoBehaviour
 {
-    public bool pocionRoja, pocionVerde;
+    public bool pocionRoja, pocionVerde, pocionVioleta, pocionAmarilla;
     void Start()
     {
         
