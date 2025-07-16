@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 181793684}
         m_TargetAssemblyTypeName: Finish, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
@@ -7078,9 +7078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7442f5a92b48a464e833d4936f2ae788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fondo: {fileID: 0}
-  boton01: {fileID: 0}
-  boton02: {fileID: 0}
+  fondo: {fileID: 1273583475}
+  boton01: {fileID: 60773496}
+  boton02: {fileID: 847890655}
 --- !u!114 &181793685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223413,7 +223413,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 181793684}
         m_TargetAssemblyTypeName: Finish, Assembly-CSharp
         m_MethodName: Salir
         m_Mode: 1
