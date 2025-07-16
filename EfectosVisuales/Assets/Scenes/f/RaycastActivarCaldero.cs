@@ -18,6 +18,7 @@ public class RaycastActivarCaldero : MonoBehaviour
             VolcarPocion();
 
             AgarrarPocion();
+
         }
         if (Input.GetKeyDown(KeyCode.F1))
         {
@@ -88,7 +89,19 @@ public class RaycastActivarCaldero : MonoBehaviour
                         hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatVerde();
                         inventario.RemoveAt(0);
                         ActualizarTexto();
-                    }                        
+                    }
+                    else if (inventario[0].pocionVioleta)
+                    {
+                        hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatVioleta();
+                        inventario.RemoveAt(0);
+                        ActualizarTexto();
+                    }
+                    else if (inventario[0].pocionAmarilla)
+                    {
+                        hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatAmarillo();
+                        inventario.RemoveAt(0);
+                        ActualizarTexto();
+                    }
                 }
             }
         }

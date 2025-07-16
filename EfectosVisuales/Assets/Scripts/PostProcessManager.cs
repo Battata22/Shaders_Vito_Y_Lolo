@@ -6,6 +6,7 @@ public class PostProcessManager : MonoBehaviour
     public Material lowHp;
     public Material regenHp;
     public Material meQuemo;
+    public Material drogado;
     public Material crearPCuraSlime;
     public Material crearPVida;
     public Material crearPMana;
@@ -34,11 +35,13 @@ public class PostProcessManager : MonoBehaviour
 
         meQuemo.SetFloat("_PrendidoQuemar", 0);
 
+        drogado.SetFloat("_Prendido", 0);
+
         crearPCuraSlime.SetFloat("_CrearPCuraSlime", 0);
 
         crearPVida.SetFloat("_CrearPVida", 0);
 
-        crearPMana.SetFloat("_CrearPMana", 0);
+        crearPMana.SetFloat("_prendido", 0);
 
     }
 
@@ -51,6 +54,16 @@ public class PostProcessManager : MonoBehaviour
             efectoPrendido = false;
 
             regenHp.SetFloat("_PrendidoHPRegen", 0);
+
+            crearPCuraSlime.SetFloat("_CrearPCuraSlime", 0);
+
+            crearPVida.SetFloat("_CrearPVida", 0);
+
+            drogado.SetFloat("_Prendido", 0);
+
+            crearPMana.SetFloat("_prendido", 0);
+
+            lowHp.SetFloat("_PrendidoLowHP", 0);
 
             meQuemo.SetFloat("_PrendidoQuemar", 0);
         }
@@ -72,30 +85,40 @@ public class PostProcessManager : MonoBehaviour
 
     public void ActivarPCuraSlime() 
     { 
-        if(regenHp.GetFloat("_CrearPCuraSlime") == 0)
+        if(crearPCuraSlime.GetFloat("_CrearPCuraSlime") == 0)
         {
             waitTimer = 0;
-            regenHp.SetFloat("_CrearPCuraSlime", 1);
+            crearPCuraSlime.SetFloat("_CrearPCuraSlime", 1);
             efectoPrendido = true;
         }
     }
 
+    public void ActivarDrogado()
+    {
+            if (drogado.GetFloat("_Prendido") == 0)
+            {
+                waitTimer = 0;
+                drogado.SetFloat("_Prendido", 1);
+                efectoPrendido = true;
+            }
+    }
+
     public void ActivarPVida()
     {
-        if (regenHp.GetFloat("_CrearPVida") == 0)
+        if (crearPVida.GetFloat("_CrearPVida") == 0)
         {
             waitTimer = 0;
-            regenHp.SetFloat("_CrearPVida", 1);
+            crearPVida.SetFloat("_CrearPVida", 1);
             efectoPrendido = true;
         }
     }
 
     public void ActivarPMana()
     {
-        if (regenHp.GetFloat("_CrearPMana") == 0)
+        if (crearPMana.GetFloat("_prendido") == 0)
         {
             waitTimer = 0;
-            regenHp.SetFloat("_CrearPMana", 1);
+            crearPMana.SetFloat("_prendido", 1);
             efectoPrendido = true;
         }
     }

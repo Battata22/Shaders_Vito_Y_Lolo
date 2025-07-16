@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mana
-  m_Shader: {fileID: -6465566751694194690, guid: 9a2ecb34bb26b96469183d0d266c3fc0,
+  m_Name: CrearPManaa
+  m_Shader: {fileID: -6465566751694194690, guid: 6158363b5f54052408a753bc11970cdb,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,14 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: ade7c880e6c6c214dbd05b0073eb8e1c, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_1:
-        m_Texture: {fileID: 2800000, guid: 8552606e650e0054daa9f3562a8e2cf2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -46,7 +38,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BreathVignette: 7
+    - _BreathVignette: 1
+    - _CrearPMana: 0
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 1
     - _Fullscreen_ColorBlendOperation: 0
@@ -55,21 +48,11 @@ Material:
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
-    - _PrendidoHPRegen: 1
     - _SaturationLevels: 0.61
-    - _Speed2: 0.2
-    - _Speed3: 0.2
-    - _Speed4: 0.69
-    - _VignetteIntensity: 18.76
-    - _VignettePower: 2.31
+    - _VignetteIntensity: 1.84
+    - _VignettePower: 1.45
     - _clampMax: 1
-    - _pancho: 1
     - _saturation: 0.13
-    - _speed: 0.5
-    - _tiling4: 1
-    - _tilingScale: 1
-    - _tilingScale2: -1
-    - _tilingScale3: 3.06
     m_Colors:
-    - _ColorVignette: {r: 0, g: 0.38121033, b: 16, a: 0.3921569}
+    - _ColorVignette: {r: 0.22361986, g: 0, b: 0.6037736, a: 0}
   m_BuildTextureStacks: []

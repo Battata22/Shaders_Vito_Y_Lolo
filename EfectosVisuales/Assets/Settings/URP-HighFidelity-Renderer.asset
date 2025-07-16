@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: CrearPCuraSlime
   m_EditorClassIdentifier: 
-  m_Active: 0
-  passMaterial: {fileID: 2100000, guid: c53fe4399fd6c384a83cd2959555a048, type: 2}
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: b260ddaf11e88c54cbb8f6ee1aad9bfc, type: 2}
   injectionPoint: 600
   requirements: 4
   passIndex: 0
@@ -29,7 +29,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: Drogado
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   passMaterial: {fileID: 2100000, guid: 27af77d9904a4f74dbae9f0a22721874, type: 2}
   injectionPoint: 600
   requirements: 4
@@ -92,11 +92,10 @@ MonoBehaviour:
   - {fileID: 3444993463627233357}
   - {fileID: -6646594927499220673}
   - {fileID: 5916361352936294587}
-  - {fileID: 6981869014873514949}
   - {fileID: 6893653684687888296}
   - {fileID: 5513926603109141061}
   - {fileID: -7414798722659136162}
-  m_RendererFeatureMap: adc0de57c6d2eee54c6ee7753d3aed09920760117784345f4d380b854d13cf2f3fe97eec208dc2a3bb089ee44d231b52c5a3d7a3e094e460a85f6288802dab5f458ae50f0867854c5ecde1d6d8571999
+  m_RendererFeatureMap: adc0de57c6d2eee54c6ee7753d3aed09920760117784345f4d380b854d13cf2f3fe97eec208dc2a3bb089ee44d231b52a85f6288802dab5f458ae50f0867854c5ecde1d6d8571999
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -185,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: CrearPMana
   m_EditorClassIdentifier: 
-  m_Active: 0
-  passMaterial: {fileID: 2100000, guid: 6192529fe421c614f8d6aaa93e24373d, type: 2}
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: aea09a0fced470e49817ace8076dc21a, type: 2}
   injectionPoint: 600
   requirements: 4
   passIndex: 0
@@ -219,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: LowHP
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   passMaterial: {fileID: 2100000, guid: 31cd58a78b044aa409c66a1576151dcb, type: 2}
   injectionPoint: 600
   requirements: 4
@@ -236,25 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: CrearPVida
   m_EditorClassIdentifier: 
-  m_Active: 0
-  passMaterial: {fileID: 2100000, guid: 81f4fe82c9687d44abc48edb3e33617d, type: 2}
-  injectionPoint: 600
-  requirements: 4
-  passIndex: 0
---- !u!114 &6981869014873514949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
-  m_Name: Mana
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  passMaterial: {fileID: 2100000, guid: aea09a0fced470e49817ace8076dc21a, type: 2}
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: 841f3614db3c16d449edce81306fb6d2, type: 2}
   injectionPoint: 600
   requirements: 4
   passIndex: 0

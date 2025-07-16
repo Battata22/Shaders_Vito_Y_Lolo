@@ -115,7 +115,7 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
     public void ChangeMatVioleta()
     {
         ResetBools();
-        amarillo = true;
+        violeta = true;
         aguarenderer.material = violetaColor;
         particulas.material = violetaBurbuja;
         humito.material = humoVioleta;
@@ -144,19 +144,17 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
         if (amarillo == true)
         {
             PostProcessManager.instance.ActivarPCuraSlime();
-            EntityManager.instance.player.FullLife();
 
         }
         if (rojo == true)
         {
             PostProcessManager.instance.ActivarPVida();
-            EntityManager.instance.player.FullLife();
 
         }
         if (violeta == true)
         {
             PostProcessManager.instance.ActivarPMana();
-            EntityManager.instance.player.FullLife();
+            
 
         }
 

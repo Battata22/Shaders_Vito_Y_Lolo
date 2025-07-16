@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 289
+  m_VersionIndex: 292
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6939,7 +6939,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.545483, y: 7.826, z: 310.91}
-  m_LocalScale: {x: 0.529119, y: 0.529119, z: 0.529119}
+  m_LocalScale: {x: 0.58525854, y: 0.58525854, z: 0.58525854}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2014744341112928579}
@@ -7079,19 +7079,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rojoColor: {fileID: 2100000, guid: 89a6474013f14e943b39e77ce0244946, type: 2}
   verdeColor: {fileID: 2100000, guid: cd24a1a0195b28e4cbd3951e16e90346, type: 2}
+  amarilloColor: {fileID: 2100000, guid: debbdd1a222499748b4dba61f8dc4349, type: 2}
+  violetaColor: {fileID: 2100000, guid: 004de47fddda09d419b0531b2627c5cc, type: 2}
   aguaColor: {fileID: 2100000, guid: ddf88c1ce92d92b4a883e01229715d68, type: 2}
   rojoBurbuja: {fileID: 2100000, guid: 9575ee6950022b64b8b3d7a0d7440d80, type: 2}
   verdeBurbuja: {fileID: 2100000, guid: f9e42f1a366761946995771e14f408eb, type: 2}
+  amarilloBurbuja: {fileID: 2100000, guid: ddeb4f956bea0194dbb8da871ecabd94, type: 2}
   azulBurbuja: {fileID: 2100000, guid: 2fd47f2c653067e4eb3656f262f76654, type: 2}
+  violetaBurbuja: {fileID: 2100000, guid: e2d7b6757c05b114f9998a6bf1aa67d0, type: 2}
   humoBlanco: {fileID: 2100000, guid: 97a2aab9fa69ec945a578ecd8a11dc6b, type: 2}
   humoRojo: {fileID: 2100000, guid: 4106a3922121f194ca2d4ef9eade399c, type: 2}
   humoVerde: {fileID: 2100000, guid: f5073368df31d134abc4750e05d323c8, type: 2}
+  humoAmarillo: {fileID: 2100000, guid: b1687d5a410e01045b425ca9c0cf73c0, type: 2}
+  humoVioleta: {fileID: 2100000, guid: 95aff57444e241e41af5a8fa8d570328, type: 2}
   aguarenderer: {fileID: 0}
   particulas: {fileID: 0}
   humito: {fileID: 2254927537366529775}
   agua: 1
   rojo: 0
   verde: 0
+  amarillo: 0
+  violeta: 0
   humo: {fileID: 6302681176317478425}
 --- !u!1 &3483228554839070199
 GameObject:
@@ -7158,7 +7166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd24a1a0195b28e4cbd3951e16e90346, type: 2}
+  - {fileID: 2100000, guid: ddf88c1ce92d92b4a883e01229715d68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9169,7 +9177,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 289
+  m_VersionIndex: 292
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

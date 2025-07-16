@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ItemPickUp : MonoBehaviour
 {
-  public Item item;
-
-    void PickUp()
+    private void Update()
     {
-        InventoryManager.Instance.Add(item);
-        Destroy(gameObject);
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            PostProcessManager.instance.ActivarDrogado();
+        }
     }
-
-    private void OnMouseDown()
-    {
-        PickUp();
-    }
+  
+       
 }
