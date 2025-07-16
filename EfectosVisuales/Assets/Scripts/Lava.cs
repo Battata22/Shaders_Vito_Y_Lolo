@@ -8,7 +8,7 @@ public class Lava : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            PostProcessManager.instance.ActivarFuego();
+            PostProcessManager.instance.ActivarLava();
             
         } 
 

@@ -28,7 +28,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BreathFrequency: 2
-    - _PrendidoBurning: 1
+    - _PrendidoBurning: 0
     - _Saturation: -0.12
     - _VignatteIntensity: 7.05
     - _VignettePower: 4.01

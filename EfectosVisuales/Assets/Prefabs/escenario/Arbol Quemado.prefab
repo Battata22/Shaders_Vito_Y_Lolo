@@ -862,7 +862,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.14
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -915,15 +915,15 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 17
-    angle: 25
+    type: 4
+    angle: 27.77
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Position: {x: 0.53, y: 0.61, z: 0.02}
+    m_Rotation: {x: -0.86, y: -233.9, z: 4.4}
+    m_Scale: {x: 1, y: 1, z: 2.4}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0

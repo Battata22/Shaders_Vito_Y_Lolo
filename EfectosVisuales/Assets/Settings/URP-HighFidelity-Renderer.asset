@@ -34,6 +34,23 @@ MonoBehaviour:
   injectionPoint: 600
   requirements: 4
   passIndex: 0
+--- !u!114 &-4809426518758537894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Lava
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: d477e92faa360804db7ced18ab8d8fca, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +112,8 @@ MonoBehaviour:
   - {fileID: 6893653684687888296}
   - {fileID: 5513926603109141061}
   - {fileID: -7414798722659136162}
-  m_RendererFeatureMap: adc0de57c6d2eee54c6ee7753d3aed09920760117784345f4d380b854d13cf2f3fe97eec208dc2a3bb089ee44d231b52a85f6288802dab5f458ae50f0867854c5ecde1d6d8571999
+  - {fileID: -4809426518758537894}
+  m_RendererFeatureMap: adc0de57c6d2eee54c6ee7753d3aed09920760117784345f4d380b854d13cf2f3fe97eec208dc2a3bb089ee44d231b52a85f6288802dab5f458ae50f0867854c5ecde1d6d85719995ac50d08107c41bd
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}

@@ -1,4 +1,8 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 public class PostProcessManager : MonoBehaviour
 {
@@ -10,6 +14,7 @@ public class PostProcessManager : MonoBehaviour
     public Material crearPCuraSlime;
     public Material crearPVida;
     public Material crearPMana;
+    public Material lavaBurning;
     public float waitTimer;
     public float timer;
     public bool efectoPrendido = false;
@@ -43,6 +48,11 @@ public class PostProcessManager : MonoBehaviour
 
         crearPMana.SetFloat("_prendido", 0);
 
+        lavaBurning.SetFloat("_PrendidoBurning", 0);
+
+
+        
+
     }
 
 
@@ -66,6 +76,8 @@ public class PostProcessManager : MonoBehaviour
             lowHp.SetFloat("_PrendidoLowHP", 0);
 
             meQuemo.SetFloat("_PrendidoQuemar", 0);
+
+            lavaBurning.SetFloat("_PrendidoBurning", 0);
         }
         #region comentado
         //if (Input.GetKeyDown(KeyCode.Z))
@@ -156,6 +168,16 @@ public class PostProcessManager : MonoBehaviour
         {
             waitTimer = 0;
             meQuemo.SetFloat("_PrendidoQuemar", 1);
+            efectoPrendido = true;
+        }
+    }
+
+    public void ActivarLava()
+    {
+        if (lavaBurning.GetFloat("_PrendidoBurning") == 0)
+        {
+            waitTimer = 0;
+            lavaBurning.SetFloat("_PrendidoBurning", 1);
             efectoPrendido = true;
         }
     }

@@ -19,6 +19,9 @@ public class RaycastActivarCaldero : MonoBehaviour
 
             AgarrarPocion();
 
+            AgarrarHongo();
+            
+
         }
         if (Input.GetKeyDown(KeyCode.F1))
         {
@@ -65,6 +68,19 @@ public class RaycastActivarCaldero : MonoBehaviour
                 inventario.Add(hit.collider.gameObject.GetComponent<Pociones>());
                 hit.collider.gameObject.SetActive(false);
                 ActualizarTexto();
+            }
+        }
+    }
+
+    void AgarrarHongo()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Camera.main.transform.forward, out hit))
+        {
+            if (hit.collider.gameObject.GetComponent<Agarrar>() != null)
+            {
+                PostProcessManager.instance.ActivarDrogado();
+                hit.collider.gameObject.SetActive(false);
             }
         }
     }
