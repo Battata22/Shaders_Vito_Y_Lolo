@@ -11,7 +11,9 @@ public class ItemPickUp : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            Destroy(gameObject);
             PostProcessManager.instance.ActivarDrogado();
+
         }
     }
   

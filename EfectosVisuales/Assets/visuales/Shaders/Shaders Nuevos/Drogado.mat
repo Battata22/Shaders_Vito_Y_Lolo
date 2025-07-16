@@ -41,7 +41,7 @@ Material:
     - _CocaZero: 0
     - _DistorsionSpeed: 0.25
     - _FuerzaBlending: -0.02
-    - _Prendido: 1
+    - _Prendido: 0
     - _SpeedNoise: 2
     - _Step: 0.14
     - _off: 0
