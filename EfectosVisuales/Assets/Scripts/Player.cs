@@ -27,6 +27,7 @@ public class Player : CharacterBase
         vectorPoint = this.transform.position;
         Destroy(other.gameObject);
     }
+
     public void GetDamage(int damage)
     {
         life -= damage;

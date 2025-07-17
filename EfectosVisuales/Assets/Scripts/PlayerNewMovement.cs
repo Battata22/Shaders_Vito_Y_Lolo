@@ -72,4 +72,16 @@ public class PlayerNewMovement : MonoBehaviour
             _yVelocity += _jumpForce;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            _speed = 2;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        _speed = 6;
+    }
 }
