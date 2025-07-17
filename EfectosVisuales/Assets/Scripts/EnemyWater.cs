@@ -7,7 +7,7 @@ public class EnemyWater : EnemyBase
     protected override void Start()
     {
        base.Start();
-        type = EnemyType.Water;
+       type = EnemyType.Water;
     }
 
     void ParticulasMuerte()
@@ -19,7 +19,6 @@ public class EnemyWater : EnemyBase
     {
         print("Audio " + gameObject.name);
     }
-
     protected override void OnDestroy()
     {
         meMuero += ParticulasMuerte;

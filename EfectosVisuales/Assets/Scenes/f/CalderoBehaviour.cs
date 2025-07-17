@@ -37,7 +37,7 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
         //    }
         //}
         //humito = humo.GetComponent<Renderer>();
-        print(humito);
+        //print(humito);
         if (agua)
         {
             aguarenderer.material = aguaColor;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,24 +6,28 @@ using UnityEngine;
 public class ControlesPlayer
 {
     Proyectiles script;
+    Player playerScript;
+    public static event Action disparar;
     public ControlesPlayer(Proyectiles pepe)
     {
         script = pepe;
     }
-    
-    
     public void ArtificialUpdate()
     {
         DeteccionDeDisparo();
         CambioDeBolas();
         
     }
-
+    public void ArtificialStart()
+    {
+        playerScript = EntityManager.instance.player;
+    }
     void DeteccionDeDisparo()
     {
-        if (Input.GetKeyDown(script.throwKey) && script.readyToThrow && script.totalThrows > 0)
+        if (Input.GetKeyDown(script.throwKey) && script.readyToThrow && script.totalThrows > 0 && playerScript.mana > playerScript.manaCost)
         {
-            script.Throw();
+            //script.Throw();
+            disparar();
         }
     }
 

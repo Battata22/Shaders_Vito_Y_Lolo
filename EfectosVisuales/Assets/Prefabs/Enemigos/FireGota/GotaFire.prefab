@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 3651632243269499639}
   - component: {fileID: 5221593637135978843}
   - component: {fileID: 6424878930652027429}
+  - component: {fileID: 530272348659012387}
   m_Layer: 0
   m_Name: GotaFire
   m_TagString: Untagged
@@ -340,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6020392705821959547}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.60876167, z: -0, w: 0.79335326}
+  m_LocalRotation: {x: 0, y: 0.60876137, z: 0, w: 0.7933534}
   m_LocalPosition: {x: 328.49158, y: 75.48413, z: 592.62866}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -417,6 +418,17 @@ MonoBehaviour:
   maxlife: 50
   damage: 25
   type: 1
+  enemyAgent: {fileID: 0}
+  enemyDmg: 0
+  enemySpeed: 0
+  attackRange: 0
+  cooldownAttack: 0
+  timerAttack: 0
+  playerTarget: {fileID: 0}
+  radio: 11
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!136 &6424878930652027429
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -440,6 +452,28 @@ CapsuleCollider:
   m_Height: 1.1378012
   m_Direction: 1
   m_Center: {x: 0, y: 0.5288563, z: 0}
+--- !u!195 &530272348659012387
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6020392705821959547}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 4.49
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &6873178437032506090
 GameObject:
   m_ObjectHideFlags: 0

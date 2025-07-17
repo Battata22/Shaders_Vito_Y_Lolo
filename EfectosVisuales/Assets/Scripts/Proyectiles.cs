@@ -25,13 +25,17 @@ public class Proyectiles : MonoBehaviour
 
     public bool readyToThrow;
     ControlesPlayer controlesScript;
+    Player playerScript;
 
     private void Start()
     {
         readyToThrow = true;
+        ControlesPlayer.disparar += Throw;
         //Evento += Throw;
         //PruebaDeEvento.instance.eventoTest += Throw;
+        playerScript = GetComponent<Player>();
         controlesScript = new ControlesPlayer(this);
+        controlesScript.ArtificialStart();
     }
 
     private void Update()
@@ -86,6 +90,8 @@ public class Proyectiles : MonoBehaviour
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 
         totalThrows--;
+        //llamado de la funcion de mana
+        playerScript.ManaCost();
 
         Invoke(nameof(ResetThrow), throwCooldown);
     }
