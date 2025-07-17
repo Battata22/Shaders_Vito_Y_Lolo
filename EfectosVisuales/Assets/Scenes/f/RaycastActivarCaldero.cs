@@ -33,7 +33,7 @@ public class RaycastActivarCaldero : MonoBehaviour
         }
     }
 
-    void ActualizarTexto()
+    /*void ActualizarTexto()
     {
         if (inventario.Count <= 0)
         {
@@ -57,7 +57,7 @@ public class RaycastActivarCaldero : MonoBehaviour
             textInventario.text = "Para cuanto queres agarrar hermano";
         }
     }
-
+    */
     void AgarrarPocion()
     {
         RaycastHit hit;
@@ -67,7 +67,7 @@ public class RaycastActivarCaldero : MonoBehaviour
             {
                 inventario.Add(hit.collider.gameObject.GetComponent<Pociones>());
                 hit.collider.gameObject.SetActive(false);
-                ActualizarTexto();
+                //ActualizarTexto();
             }
         }
     }
@@ -98,25 +98,25 @@ public class RaycastActivarCaldero : MonoBehaviour
                     {
                         hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatRojo();
                         inventario.RemoveAt(0);
-                        ActualizarTexto();
+                        //ActualizarTexto();
                     }
                     else if (inventario[0].pocionVerde)
                     {
                         hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatVerde();
                         inventario.RemoveAt(0);
-                        ActualizarTexto();
+                        //ActualizarTexto();
                     }
                     else if (inventario[0].pocionVioleta)
                     {
                         hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatVioleta();
                         inventario.RemoveAt(0);
-                        ActualizarTexto();
+                        //ActualizarTexto();
                     }
                     else if (inventario[0].pocionAmarilla)
                     {
                         hit.collider.gameObject.GetComponent<ICaldero>().ChangeMatAmarillo();
                         inventario.RemoveAt(0);
-                        ActualizarTexto();
+                        //ActualizarTexto();
                     }
                 }
             }

@@ -149,6 +149,7 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
         if (rojo == true)
         {
             PostProcessManager.instance.ActivarPVida();
+            EntityManager.instance.player.FullLife();
 
         }
         if (violeta == true)
