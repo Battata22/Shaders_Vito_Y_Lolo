@@ -39,7 +39,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BreathVignette: 1
-    - _CrearPCuraSlime: 0
+    - _CrearPCuraSlime: 1
     - _CrearPPoder: 1
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 1

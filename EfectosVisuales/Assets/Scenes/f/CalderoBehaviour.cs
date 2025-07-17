@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class CalderoBehaviour : MonoBehaviour, ICaldero
 {
@@ -8,6 +9,7 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
     [SerializeField] Renderer aguarenderer, particulas, humito;
     [SerializeField] bool agua, rojo, verde, amarillo, violeta;
     [SerializeField] ParticleSystem humo;
+    public PlayableDirector timeline;
 
     void Start()
     {
@@ -19,6 +21,8 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
                 aguarenderer = sel.GetComponent<Renderer>();
             }
         }
+
+        timeline = GetComponent<PlayableDirector>();
 
         var go1 = GetComponentsInChildren<Renderer>();
         foreach (var sel in go)
@@ -143,6 +147,9 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
         }
         if (amarillo == true)
         {
+
+            timeline.Play();
+            print("a");
             PostProcessManager.instance.ActivarPCuraSlime();
 
         }
@@ -155,7 +162,9 @@ public class CalderoBehaviour : MonoBehaviour, ICaldero
         if (violeta == true)
         {
             PostProcessManager.instance.ActivarPMana();
-            
+            EntityManager.instance.player.SumarMana(100);
+
+
 
         }
 

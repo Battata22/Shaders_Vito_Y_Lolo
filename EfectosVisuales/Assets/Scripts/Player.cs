@@ -101,6 +101,15 @@ public class Player : CharacterBase
         //Canvas
         manaBar.fillAmount = mana / 100f;
     }
+
+    public void SumarMana(int suma)
+    {
+        mana += suma;
+        if (mana >= 100)
+        {
+            mana = 100;
+        }
+    }
 }
 
 
