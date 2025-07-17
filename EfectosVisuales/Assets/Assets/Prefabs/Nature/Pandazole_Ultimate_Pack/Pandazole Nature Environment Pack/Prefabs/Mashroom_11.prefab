@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6194478095351529423}
   - component: {fileID: 3460216278943765813}
   - component: {fileID: 8939972849366735337}
+  - component: {fileID: 1750965843858839320}
   m_Layer: 0
   m_Name: Mashroom_11
   m_TagString: Untagged
@@ -65,6 +66,8 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 772d9d9117eab56479d2738f542c054c, type: 2}
+  - {fileID: 2100000, guid: 3552c3bd606328c4eb1ee28d27273156, type: 2}
+  - {fileID: 2100000, guid: 9ed750cbbdfa5614590ebcad6ea80988, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,3 +159,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.19945535, y: 0.5047948, z: 0.22000837}
   m_Center: {x: -0.026485182, y: 0.25112283, z: -0.057373606}
+--- !u!114 &1750965843858839320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9154473703431767905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563e63f0344bec43ba6330d24a06ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hongo: 1
