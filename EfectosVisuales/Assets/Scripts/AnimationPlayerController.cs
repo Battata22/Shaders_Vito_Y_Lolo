@@ -6,46 +6,42 @@ public class AnimationPlayerController : MonoBehaviour
 {
     Animator animator;
     int isWalkingHash;
+    float xAxis, yAxis;
+
+    [SerializeField] CharacterController _cc;
     void Start()
     {
+        _cc = EntityManager.instance.player.GetComponent<PlayerNewMovement>()._cc;
         animator = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("IsWalking");
-    }
 
+        Input.GetKeyDown(KeyCode.Space);
+        
+    }
     // Update is called once per frame
     void Update()
     {
-        //variables de bool del animator
-        bool isWalking = animator.GetBool("IsWalking");
-        bool isJumping = animator.GetBool("IsJumping");
-        bool isIdle = animator.GetBool("IsIdle");
-
-        //variables de inputs
-        bool forwardPressed = Input.GetKey("w");
-        bool leftPressed = Input.GetKey("a");
-        bool backPressed = Input.GetKey("s");
-        bool rightPressed = Input.GetKey("d");
-        bool jumpKey = Input.GetKeyDown(KeyCode.Space);
-        
-
+        xAxis = Input.GetAxisRaw("Horizontal");
+        yAxis = Input.GetAxisRaw("Vertical");
 
         //Anim de Movimiento
-        if (!isWalking && forwardPressed || leftPressed || backPressed || rightPressed)
+        if (xAxis != 0 || yAxis != 0)
         {
-            animator.SetBool(isWalkingHash,true);
+            animator.SetBool(isWalkingHash, true);
         }
-        if (isWalking && !forwardPressed || !leftPressed || !backPressed || !rightPressed)
+        else
         {
             animator.SetBool(isWalkingHash, false);
         }
         //Anim de salto
-        if (!isJumping && jumpKey)
-        {
-            animator.SetBool("IsJumping", true);
-        }
-        if (isJumping && !jumpKey)
+        if (_cc.isGrounded && animator.GetBool("IsJumping"))
         {
             animator.SetBool("IsJumping", false);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        
     }
 }

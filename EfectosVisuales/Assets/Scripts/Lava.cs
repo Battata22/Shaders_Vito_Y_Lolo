@@ -9,8 +9,7 @@ public class Lava : MonoBehaviour
         if (collision.gameObject.layer == 3)
         {
             PostProcessManager.instance.ActivarLava();
-            
+            EntityManager.instance.player.GetDamage(25);
         } 
-
     }
 }

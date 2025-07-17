@@ -8,7 +8,7 @@ public class PlayerNewMovement : MonoBehaviour
     [SerializeField] float _jumpForce;
     [SerializeField] float _gravedadMult;
 
-    CharacterController _cc;
+    public CharacterController _cc;
     Vector3 _direccion;
 
     float _xAxis, _zAxis;
