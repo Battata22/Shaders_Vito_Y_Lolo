@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : CharacterBase
 {
     [SerializeField] List<GameObject> checkpoints;
     [SerializeField] Vector3 vectorPoint;
     [SerializeField] bool dead = false;
+    public Image healthBar;
     public int Damage { get { return damage; } }
     protected override void Start()
     {
