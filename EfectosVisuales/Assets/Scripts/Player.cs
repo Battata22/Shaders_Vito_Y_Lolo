@@ -9,6 +9,7 @@ public class Player : CharacterBase
     [SerializeField] List<GameObject> checkpoints;
     [SerializeField] Vector3 vectorPoint;
     [SerializeField] bool dead = false; //para checkpoints
+    //[SerializeField] float rotacionInicio;
 
     [Header("Sistema de Mana")]
     [SerializeField] public float mana;
@@ -21,12 +22,16 @@ public class Player : CharacterBase
     public Image manaBar;
 
     public int Damage { get { return damage; } }
+
+   
     protected override void Start()
     {
         base.Start();
         EntityManager.instance.player = this;
         mana = maxMana;
         ControlesPlayer.disparar += ManaCost;
+
+        
     }
     private void Update()
     {
@@ -40,7 +45,10 @@ public class Player : CharacterBase
     private void OnTriggerEnter(Collider other)
     {
         vectorPoint = this.transform.position;
-        Destroy(other.gameObject);
+        if(other.gameObject.layer != 9)
+        {
+            Destroy(other.gameObject);
+        }
     }
 
     public void GetDamage(int damage)

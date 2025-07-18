@@ -7,6 +7,7 @@ TagManager:
   - Agua
   - Particulas
   - Humo
+  - paredTutorial
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Pelotas
   - 
   - Charco
-  - 
+  - paredTutorial
   - whatIsGround
   - 
   - 

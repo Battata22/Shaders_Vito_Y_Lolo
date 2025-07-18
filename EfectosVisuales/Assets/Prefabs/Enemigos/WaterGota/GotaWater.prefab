@@ -401,7 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 0
   maxlife: 50
-  damage: 25
+  damage: 15
   type: 0
   enemyAgent: {fileID: 7660558568544640459}
   colliderEnemy: {fileID: 0}
