@@ -35,6 +35,13 @@ public class Player : CharacterBase
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Cursor.lockState = CursorLockMode.None;
+
+            Cursor.visible = true;
+        }
+
         ManaSystem();
         if (dead == true)
         {
