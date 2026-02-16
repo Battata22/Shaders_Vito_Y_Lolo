@@ -6,30 +6,39 @@ using UnityEngine.UI;
 
 public class Player : CharacterBase
 {
+    // Get & Set
+
     [SerializeField] List<GameObject> checkpoints;
     [SerializeField] Vector3 vectorPoint;
     [SerializeField] bool dead = false; //para checkpoints
     //[SerializeField] float rotacionInicio;
 
     [Header("Sistema de Mana")]
-    [SerializeField] public float mana;
+    [SerializeField] float mana;
+    public float Mana {  get { return mana; } private set { mana = value; } }
     [SerializeField] float maxMana;
+    public float MaxMana { get { return maxMana; } private set { maxMana = value; } }
+
     [SerializeField] public float manaCost;
+    public float ManaCost { get { return manaCost; } private set { manaCost = value; } }
+
     [SerializeField] float manaRegen;
+    public float ManaRegen { get { return manaRegen; } private set { manaRegen = value; } }
+
 
     [Header("Barras Canvas")]
     public Image healthBar;
     public Image manaBar;
 
-    public int Damage { get { return damage; } }
+    public int Damage { get { return damage; } private set { damage = value; } }
 
-   
+
     protected override void Start()
     {
         base.Start();
         EntityManager.instance.player = this;
         mana = maxMana;
-        ControlesPlayer.disparar += ManaCost;
+        ControlesPlayer.disparar += ManaCostMet;
 
         
     }
@@ -106,7 +115,7 @@ public class Player : CharacterBase
         //Canvas
         manaBar.fillAmount = mana / 100f;
     }
-    public void ManaCost()
+    public void ManaCostMet()
     {
         mana -= manaCost;
         if (mana < 0)

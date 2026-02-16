@@ -2,9 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct DelegateType
+public class DelegateTest : MonoBehaviour
 {
+    delegate void TestDelegate();
 
-    public delegate void VoidDelegate();
-    public delegate void VoidDelegateTrans(Transform a);
+    TestDelegate test;
+
+
+    private void Start()
+    {
+        test += a;
+        test += c;
+        test += b;
+
+        test();
+    }
+
+
+    void a()
+    {
+        print("a");
+    }
+
+    void b()
+    {
+        print("b");
+    }
+
+    void c()
+    {
+        print("c");
+    }
 }

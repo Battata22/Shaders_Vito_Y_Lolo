@@ -12,7 +12,6 @@ public class Proyectiles : MonoBehaviour
     public Transform attackPoint;
     public BaseBall objectToThrow;
     public BaseBall[] balls;
-    //public event Action Evento;
 
     [Header("Settings")]
     public int totalThrows;
@@ -31,8 +30,6 @@ public class Proyectiles : MonoBehaviour
     {
         readyToThrow = true;
         ControlesPlayer.disparar += Throw;
-        //Evento += Throw;
-        //PruebaDeEvento.instance.eventoTest += Throw;
         playerScript = GetComponent<Player>();
         controlesScript = new ControlesPlayer(this);
         controlesScript.ArtificialStart();
@@ -41,27 +38,6 @@ public class Proyectiles : MonoBehaviour
     private void Update()
     {
         controlesScript.ArtificialUpdate();
-
-        //if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
-        //{
-        //    //Evento();
-        //    Throw();
-        //}
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-        //{
-        //    objectToThrow = balls[0];
-        //}
-        //else if (Input.GetKeyDown(KeyCode.Alpha2)) 
-        //{ 
-        //    objectToThrow = balls[1]; 
-        //}
-        //else if (Input.GetKeyDown(KeyCode.Alpha3))
-        //{
-        //    objectToThrow = balls[2];
-        //}
-
-
-
     }
 
     public void Throw()
@@ -91,7 +67,7 @@ public class Proyectiles : MonoBehaviour
 
         totalThrows--;
         //llamado de la funcion de mana
-        playerScript.ManaCost();
+        playerScript.ManaCostMet();
 
         Invoke(nameof(ResetThrow), throwCooldown);
     }

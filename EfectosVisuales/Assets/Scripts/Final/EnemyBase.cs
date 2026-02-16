@@ -8,6 +8,8 @@ using UnityEngine.AI;
 
 public class EnemyBase : CharacterBase, IEnemy
 {
+    // ENUM & DELEGATE
+
     [SerializeField] protected EnemyType type;
     Animator animator;
     public NavMeshAgent enemyAgent;
@@ -28,9 +30,8 @@ public class EnemyBase : CharacterBase, IEnemy
     [SerializeField] LayerMask playerLayer;
     Vector3 dir;
 
-    public static event Action meMuero;
-
-    //private Transform targetTransform;
+    delegate void MyUpdate();
+    MyUpdate _myUpdate;
     
     public void TakeDamage(int damage)
     {
@@ -57,17 +58,27 @@ public class EnemyBase : CharacterBase, IEnemy
         enemyAgent = GetComponent<NavMeshAgent>();       
         animator = GetComponent<Animator>();
         colliderEnemy = GetComponent<Collider>();
+
+        _myUpdate += LookForPlayer;
+        _myUpdate += Animation;
     }
     protected void Update()
     {
         animator.SetBool("IsWalking", false);
-        LookForPlayer();
-        Animation();
+        
+        if (_myUpdate != null)
+            _myUpdate();
     }
     protected virtual void OnDestroy()
     {
         meMuero();
     }
+
+    protected virtual void meMuero()
+    {
+
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

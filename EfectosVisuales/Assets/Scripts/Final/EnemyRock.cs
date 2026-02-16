@@ -21,13 +21,18 @@ public class EnemyRock : EnemyBase
         print("Audio " + gameObject.name);
     }
 
+    protected override void meMuero()
+    {
+        base.meMuero();
+        ParticulasMuerte();
+        AudioMuerte();
+        ParticulasMuerte();
+        AudioMuerte();
+    }
+
     protected override void OnDestroy()
     {
-        meMuero += ParticulasMuerte;
-        meMuero += AudioMuerte;
         base.OnDestroy();
-        meMuero -= ParticulasMuerte;
-        meMuero -= AudioMuerte;
     }
 
     private void OnCollisionEnter(Collision collision)

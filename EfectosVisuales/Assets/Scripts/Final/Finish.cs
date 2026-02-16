@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,26 +8,34 @@ using UnityEngine.UI;
 
 public class Finish : MonoBehaviour
 {
-    [SerializeField] GameObject fondo, boton01, boton02;
-    
+    // Evento
+
+    public event Action Finished;
+    public event Action RetryEvent;
+
+    public static Finish instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public void Salir()
     {
         Application.Quit();
     }
     public void Retry()
     {
-        fondo.SetActive(false);
-        boton01.SetActive(false);
-        boton02.SetActive(false);
+
+        RetryEvent?.Invoke();
+
         SceneManager.LoadScene(0);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.name == "Player")
         {
-            fondo.SetActive(true);
-            boton01.SetActive(true);
-            boton02.SetActive(true);
+            Finished?.Invoke();
+
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
